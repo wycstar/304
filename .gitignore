@@ -1,0 +1,63 @@
+# Visual Studio相关
+.vs/
+*.sln.ide
+*.suo
+*.user
+*.userprefs
+*.sln
+controlSerialNetPort.VC.db
+controlSerialNetPort.ncb
+controlSerialNetPort.sdf
+UpgradeLog.htm
+controlSerialNetPort/controlSerialNetPort.aps
+controlSerialNetPort.vcxproj
+controlSerialNetPort.vcxproj.filters
+include/
+source/
+lib/
+source/
+res/
+
+# Build结果
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Bb]in/
+[Oo]bj/
+[Ll]ogs/
+*.obj
+*.exe
+*.dll
+*.pdb
+*.idb
+*.ilk
+*.log
+
+# 适用于NuGet
+*.nupkg
+*.snupkg
+packages/
+*.nuspec
+
+# Visual Studio测试结果
+TestResults/
+*.vspscc
+*.vssscc
+
+# Rider或其他IDE的配置文件
+.idea/
+*.sln.iml
+
+# 其他可能的敏感信息或临时文件
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.jfm.user
+*.pdb
+*.log
+
+# 用户自定义文件
+*.vs/
+*.vscode/

@@ -1,0 +1,143 @@
+; Installation INF for the Cypress Generic USB Driver for Windows XP
+; Processor support for x86 based platforms.
+;
+; (c) Copyright 2012, 2013 Cypress Semiconductor Corporation
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Sample
+ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
+provider=%USB3200_Provider%
+CatalogFile=USB3200.cat
+DriverVer=08/17/2015,1.2.3.10
+CatalogFile.NTx86=USB3200X86.cat
+CatalogFile.NTAMD64=USB3200X64.cat
+
+[SourceDisksNames]
+1=%USB3200_Install%,,,
+
+[SourceDisksFiles]
+USB3200.sys = 1
+
+[DestinationDirs]
+USB3200.Files.Ext = 10,System32\Drivers
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+[Manufacturer]
+%USB3200_Provider%=Device,NT,NTx86,NTamd64
+
+;for all platforms
+[Device.NT]
+%VID_04B4&PID_3200.DeviceDesc%=USB3200, USB\VID_04B4&PID_3200
+
+;for x86 platforms
+[Device.NTx86]
+%VID_04B4&PID_3200.DeviceDesc%=USB3200, USB\VID_04B4&PID_3200
+
+;for x64 platforms
+[Device.NTamd64]
+%VID_04B4&PID_3200.DeviceDesc%=USB3200, USB\VID_04B4&PID_3200
+
+[USB3200.NT]
+CopyFiles=USB3200.Files.Ext
+AddReg=USB3200.AddReg
+
+[USB3200.NT.HW]
+AddReg=USB3200.AddReg.Guid
+
+[USB3200.NT.Services]
+Addservice = USB3200,2,USB3200.AddService
+
+[USB3200.NTx86]
+CopyFiles=USB3200.Files.Ext
+AddReg=USB3200.AddReg
+
+[USB3200.NTx86.HW]
+AddReg=USB3200.AddReg.Guid
+
+[USB3200.NTx86.Services]
+Addservice = USB3200,2,USB3200.AddService
+
+[USB3200.NTamd64]
+CopyFiles=USB3200.Files.Ext
+AddReg=USB3200.AddReg
+
+[USB3200.NTamd64.HW]
+AddReg=USB3200.AddReg.Guid
+
+[USB3200.NTamd64.Services]
+Addservice = USB3200,2,USB3200.AddService
+
+[USB3200.AddReg]
+; Deprecating - do not use in new apps to identify a USB3200 driver
+HKR,,,0,%ClassName%
+HKR,,Icon,,-6
+;HKR,,DeviceCharacteristics,0x10001,0x100     ;Use same security checks on relative opens
+;HKR,,Security,,"D:P(A;;GA;;;SY)(A;;GA;;;BA)" ;Allow generic all access to system and built-in Admin. 
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,USB3200.sys
+; You may optionally include a check for DriverBase in your application to check for a USB3200 driver
+HKR,,DriverBase,,USB3200.sys
+HKR,"Parameters","MaximumTransferSize",0x10001,4096
+HKR,"Parameters","DebugLevel",0x10001,2
+HKR,,FriendlyName,,%USB3200_Description%
+
+[USB3200.AddService]
+DisplayName    = %USB3200_Description%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\USB3200.sys
+AddReg         = USB3200.AddReg
+LoadOrderGroup = Base
+
+[USB3200.Files.Ext]
+USB3200.sys
+
+[USB3200.AddReg.Guid]
+HKR,,DriverGUID,,%USB3200.GUID%
+
+;-------------- WDF Coinstaller installation
+[SourceDisksFiles]
+WdfCoInstaller01009.dll=1 ; make sure the number matches with SourceDisksNames
+
+[DestinationDirs]
+CoInstaller_CopyFiles = 11
+
+[USB3200.NTamd64.CoInstallers]
+AddReg=CoInstaller_AddReg
+CopyFiles=CoInstaller_CopyFiles
+
+[USB3200.NTx86.CoInstallers]
+AddReg=CoInstaller_AddReg
+CopyFiles=CoInstaller_CopyFiles
+
+[CoInstaller_CopyFiles]
+WdfCoInstaller01009.dll
+
+[CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller01009.dll,WdfCoInstaller"
+
+[USB3200.NTamd64.Wdf]
+KmdfService = USB3200, USB3200_wdfsect
+
+[USB3200.NTx86.Wdf]
+KmdfService = USB3200, USB3200_wdfsect
+
+[USB3200_wdfsect]
+KmdfLibraryVersion = 1.9
+
+[Strings]
+ClassName = "Art USB Devices"
+USB3200_Provider    = "Art"
+USB3200_Company     = "Art Corporation"
+USB3200_Description = "Art USB3.0 Driver"
+USB3200_DisplayName = "Art USB3.0 Generic"
+USB3200_Install     = "Art USB3200.0 Driver Installation Disk"
+VID_04B4&PID_3200.DeviceDesc="Art USB3200 8CH 12Bit 500Ksps AI CTR DIO Board"
+
+USB3200.GUID="{AE18AA60-7F6A-11d4-97DD-000102293200}"
+USB3200_Unused      = "."

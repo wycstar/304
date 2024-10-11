@@ -1,0 +1,2545 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\controlSerialNetPort.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\favicon.ico"
+
+IDI_ICON_spray          ICON                    "res\\spray.ico"
+
+IDI_ICON_green          ICON                    "res\\green.ico"
+
+IDI_ICON_green24        ICON                    "res\\circle_green_24px_543525_easyicon.net.ico"
+
+IDI_ICON_Cgrey24        ICON                    "res\\Circle_Grey_24px_566285_easyicon.net.ico"
+
+IDI_ICON_green16        ICON                    "res\\circle_green_16px_543525_easyicon.net.ico"
+
+IDI_ICON_Cgrey16        ICON                    "res\\Circle_Grey_16px_566285_easyicon.net.ico"
+
+IDI_ICON_startb         ICON                    "res\\Control_Start_Blue_32px_529331_easyicon.net.ico"
+
+IDI_ICON_startg         ICON                    "res\\Control_Start_32px_529330_easyicon.net.ico"
+
+IDI_ICON_stopg          ICON                    "res\\Control_Stop_32px_529332_easyicon.net.ico"
+
+IDI_ICON_stopblue       ICON                    "res\\Control_Stop_Blue_32px_529333_easyicon.net.ico"
+
+IDI_ICON_switch         ICON                    "res\\20170210092207808_easyicon_net_32.ico"
+
+IDI_ICON_log64          ICON                    "res\\20161202121644224_easyicon_net_64.ico"
+
+IDI_ICON_log48          ICON                    "res\\20161202122755865_easyicon_net_48.ico"
+
+IDI_ICON_save32         ICON                    "res\\Save_as_32px_1186319_easyicon.net.ico"
+
+IDI_ICON_default32      ICON                    "res\\default_icon_32px_1114588_easyicon.net.ico"
+
+IDI_ICON_setting        ICON                    "res\\setting_32px_26740_easyicon.net.ico"
+
+IDI_ICON_CONNECT        ICON                    "res\\20170210092207808_easyicon_net_32.ico"
+
+IDI_ICON_DISCONNECT     ICON                    "res\\20170210092354907_easyicon_net_32.ico"
+
+IDI_ICON_IO             ICON                    "res\\administrative_tools_32px_1069361_easyicon.net.ico"
+
+IDI_ICON_flowchart      ICON                    "res\\12.ico"
+
+IDI_ICON_Editor         ICON                    "res\\newFolder.ico"
+
+IDI_ICON_OpenDataBase   ICON                    "res\\reload.ico"
+
+IDI_ICON_suspendgrey    ICON                    "res\\LH2 - Pause.ico"
+
+IDI_ICON_suspendyellow  ICON                    "res\\NN - Pause.ico"
+
+IDI_ICON_initialgrey    ICON                    "res\\LH2 - Start.ico"
+
+IDI_ICON_initialyellow  ICON                    "res\\NN - Start.ico"
+
+IDI_ICON_IOgrey         ICON                    "res\\LH2 - Favorites.ico"
+
+IDI_ICON_IOyellow       ICON                    "res\\NN - Favorites.ico"
+
+IDI_ICON_Continuegrey   ICON                    "res\\LH2 - Play.ico"
+
+IDI_ICON_Continueyellow ICON                    "res\\NN - Play.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 controlSerialNetPort"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "controlSerialNetPort，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2016",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_CONTROLSERIALNETPORT_DIALOG DIALOGEX 0, 0, 707, 522
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_NOFAILCREATE | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION " "
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         IDB_BITMAP_FlowChart,IDC_STATIC,"Static",SS_BITMAP,161,144,254,105
+    CTEXT           "Part2",IDC_STATIC02,225,123,48,12
+    CTEXT           "Part1",IDC_STATIC01,153,135,48,12
+    CTEXT           "Part10",IDC_STATIC10,101,186,48,12
+    PUSHBUTTON      "",IDC_BUTTON_light05,409,186,15,15
+    CTEXT           "Part5",IDC_STATIC05,426,189,48,12
+    PUSHBUTTON      "",IDC_BUTTON_light06,373,222,15,15
+    CTEXT           "Part6",IDC_STATIC06,367,242,48,12
+    CTEXT           "Part7",IDC_STATIC07,305,254,48,12
+    PUSHBUTTON      "",IDC_BUTTON_light07,320,237,15,15
+    PUSHBUTTON      "",IDC_BUTTON_light08,249,238,15,15
+    CTEXT           "Part8",IDC_STATIC08,229,255,48,12
+    CTEXT           "Part9",IDC_STATIC09,159,240,48,12
+    PUSHBUTTON      "",IDC_BUTTON_light010,153,186,15,15
+    PUSHBUTTON      "",IDC_BUTTON_light01,189,151,15,15
+    PUSHBUTTON      "",IDC_BUTTON_light02,245,138,15,15
+    PUSHBUTTON      "",IDC_BUTTON_light03,313,138,15,15
+    PUSHBUTTON      "",IDC_BUTTON_light04,373,152,15,15
+    PUSHBUTTON      "",IDC_BUTTON_light09,190,222,15,15
+    CTEXT           "Part3",IDC_STATIC03,303,123,48,12
+    CTEXT           "Part4",IDC_STATIC04,378,135,48,12
+    PUSHBUTTON      "自动/手动",IDC_BUTTON_autohand,53,366,32,30
+    LTEXT           "错漏装检测",IDC_STATIC,158,308,45,10
+    PUSHBUTTON      "",IDC_BUTTON_light1,135,305,15,15
+    LTEXT           "位置查询",IDC_STATIC,158,323,57,10
+    PUSHBUTTON      "",IDC_BUTTON_light2,135,321,15,15
+    LTEXT           "图像处理",IDC_STATIC,333,322,34,10
+    PUSHBUTTON      "",IDC_BUTTON_light3,310,321,15,15
+    LTEXT           "光源调节",IDC_STATIC,415,307,55,10
+    PUSHBUTTON      "",IDC_BUTTON_light4,392,304,15,15
+    LTEXT           "轴动/IO",IDC_STATIC,244,323,49,10
+    PUSHBUTTON      "",IDC_BUTTON_light5,221,321,15,15
+    LTEXT           "金丝球焊接",IDC_STATIC,414,339,47,10,NOT WS_VISIBLE
+    PUSHBUTTON      "",IDC_BUTTON_light6,392,336,15,15,NOT WS_VISIBLE
+    LTEXT           "棱镜回位",IDC_STATIC,332,338,34,10,NOT WS_VISIBLE
+    PUSHBUTTON      "",IDC_BUTTON_light7,310,337,15,15,NOT WS_VISIBLE
+    LTEXT           "微动调整",IDC_STATIC,332,308,38,10
+    PUSHBUTTON      "",IDC_BUTTON_light8,310,305,15,15
+    LTEXT           "显示与交互",IDC_STATIC,414,323,40,10
+    PUSHBUTTON      "",IDC_BUTTON_light9,392,320,15,15
+    LTEXT           "延时",IDC_STATIC,243,307,28,10
+    LISTBOX         IDC_LIST_LOG,106,389,370,126,LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "清除",IDC_BUTTON_clear,554,498,38,14
+    PUSHBUTTON      "保存",IDC_BUTTON_save,500,498,38,14
+    CONTROL         "",IDC_DISP1,"Static",SS_BLACKFRAME,478,46,186,134
+    CONTROL         "",IDC_DISP2,"Static",SS_BLACKFRAME,478,183,187,114
+    PUSHBUTTON      "开始",IDC_BUTTON_start1,220,287,29,14,NOT WS_VISIBLE
+    PUSHBUTTON      "停止",IDC_BUTTON_mainstop1,252,287,29,14,NOT WS_VISIBLE
+    PUSHBUTTON      "开始",IDC_BUTTON_start2,386,286,29,14,NOT WS_VISIBLE
+    PUSHBUTTON      "停止",IDC_BUTTON_mainstop2,418,286,29,14,NOT WS_VISIBLE
+    PUSHBUTTON      "",IDC_BUTTON_log,483,10,32,30
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,135,346,313,14
+    LTEXT           "线程1串口：",IDC_STATIC,12,14,48,8
+    COMBOBOX        IDC_COMBO_PORT1,54,12,37,58,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "线程2串口：",IDC_STATIC,12,24,48,8
+    COMBOBOX        IDC_COMBO_PORT2,54,23,37,54,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "",IDC_BUTTON_connect,112,79,26,27
+    PUSHBUTTON      "",IDC_BUTTON_autostart,16,195,32,30
+    PUSHBUTTON      "",IDC_BUTTON_autostop,52,195,32,30
+    PUSHBUTTON      "",IDC_BUTTON_setting,51,308,32,30
+    LTEXT           "线程3串口：",IDC_STATIC,11,32,43,8
+    COMBOBOX        IDC_COMBO_PORT3,54,33,37,54,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "",IDC_BUTTON2,15,308,32,30
+    PUSHBUTTON      "退出登录",IDC_BUTTON3,658,15,38,12
+    LTEXT           "当前登录：",IDC_STATIC,522,18,38,11
+    LTEXT           "",IDC_STATIC2,555,18,53,10
+    PUSHBUTTON      "",IDC_BUTTON_OpenDataBase,31,441,32,30
+    GROUPBOX        "操控区",IDC_STATIC,7,114,89,291
+    GROUPBOX        "自动流程",IDC_STATIC,163,10,313,82
+    LTEXT           "线程2：",IDC_STATIC,237,64,25,12
+    PUSHBUTTON      "更换",IDC_BUTTON_ChangeinitTXT2,447,26,23,12
+    PUSHBUTTON      "",IDC_BUTTON_Editor,200,15,32,30
+    LTEXT           "初始化2：",IDC_STATIC,237,27,32,12
+    LTEXT           "initWork2.txt",IDC_STATIC_initTXT2,282,28,163,12
+    LTEXT           "autoWork2.txt",IDC_STATIC_autoTXT2,282,65,163,12
+    PUSHBUTTON      "更换",IDC_BUTTON_ChangeautoTXT2,447,63,23,12
+    LTEXT           "线程1：",IDC_STATIC,237,52,25,12
+    PUSHBUTTON      "更换",IDC_BUTTON_ChangeinitTXT1,447,13,23,12
+    LTEXT           "初始化1：",IDC_STATIC,237,14,33,12
+    LTEXT           "initWork1.txt",IDC_STATIC_initTXT1,282,15,163,12
+    LTEXT           "autoWork1.txt",IDC_STATIC_autoTXT1,282,53,163,12
+    PUSHBUTTON      "更换",IDC_BUTTON_ChangeautoTXT1,447,51,23,12
+    PUSHBUTTON      "",IDC_BUTTON_flowchart,201,49,32,30,NOT WS_VISIBLE
+    CTEXT           "流程编辑器",IDC_STATIC,192,43,45,12
+    CTEXT           "图形化流程",IDC_STATIC,191,80,45,12,NOT WS_VISIBLE
+    CTEXT           "启动",IDC_STATIC,9,228,45,12
+    CTEXT           "停止",IDC_STATIC,47,228,45,12
+    CTEXT           "数据库",IDC_STATIC,23,474,49,12
+    CTEXT           "一键连接",IDC_STATIC,60,88,45,12
+    CTEXT           "设置",IDC_STATIC,47,340,45,12
+    CTEXT           "IO",IDC_STATIC,7,340,45,12
+    CTEXT           "日志列表",IDC_STATIC,102,376,44,8
+    PUSHBUTTON      "",IDC_BUTTON_Suspend,52,252,32,30
+    CTEXT           "暂停",IDC_STATIC,47,282,45,12
+    PUSHBUTTON      "",IDC_BUTTON_light10,221,305,15,15
+    PUSHBUTTON      "",IDC_BUTTON_initialization,14,142,32,30
+    CTEXT           "初始化",IDC_STATIC,9,172,45,12
+    GROUPBOX        "正在装配的零件",IDC_STATIC,105,111,372,164
+    GROUPBOX        "装配动作显示",IDC_STATIC,105,277,372,95
+    GROUPBOX        "串口区",IDC_STATIC,8,6,150,102
+    PUSHBUTTON      "",IDC_BUTTON_Continue,15,252,32,30
+    CTEXT           "继续",IDC_STATIC,10,282,45,12
+    GROUPBOX        "数据库",IDC_STATIC,6,398,89,117
+    PUSHBUTTON      "力传感器",IDC_Forcecontrol,25,496,50,14
+    CONTROL         "",IDC_DISP3,"Static",SS_BLACKFRAME,476,300,189,112
+    PUSHBUTTON      "更换",IDC_BUTTON_ChangeinitTXT3,447,38,23,12
+    LTEXT           "初始化3：",IDC_STATIC,237,39,32,12
+    LTEXT           "initWork3.txt",IDC_STATIC_initTXT3,282,40,163,12
+    LTEXT           "线程3：",IDC_STATIC,237,77,25,12
+    LTEXT           "autoWork3.txt",IDC_STATIC_autoTXT3,282,78,163,12
+    PUSHBUTTON      "更换",IDC_BUTTON_ChangeautoTXT3,447,76,23,12
+    PUSHBUTTON      "Button4",IDC_BUTTON4,12,372,33,14
+    CONTROL         "",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,52,45,100,15
+    LTEXT           "控制器IP：",IDC_STATIC,11,49,37,8
+    CONTROL         "",IDC_IPADDRESS2,"SysIPAddress32",WS_TABSTOP,52,62,100,15
+    LTEXT           "本地IP：",IDC_STATIC,11,65,29,8
+    EDITTEXT        IDC_EDIT5,381,69,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "开始采集",IDC_BUTTON5,524,30,50,14
+    PUSHBUTTON      "停止",IDC_BUTTON_stopcatch,582,13,50,14
+    PUSHBUTTON      "stopcatch",IDC_BUTTON_sc,628,31,50,14
+END
+
+IDD_DIALOG_SERIAL1 DIALOGEX 0, 0, 544, 346
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "绝对位置",IDC_RADIO_absPosition,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,232,48,10
+    CONTROL         "相对位置",IDC_RADIO_relPosition,"Button",BS_AUTORADIOBUTTON,71,232,48,10
+    CONTROL         "绝对位置",IDC_RADIO_absPosition2,"Button",BS_AUTORADIOBUTTON | WS_GROUP,281,234,48,10
+    CONTROL         "相对位置",IDC_RADIO_relPosition2,"Button",BS_AUTORADIOBUTTON,335,234,48,10
+    COMBOBOX        IDC_COMBO_MODE,155,233,96,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "模式",IDC_STATIC,130,235,17,8
+    PUSHBUTTON      "JOG+",IDC_BUTTON_JOGP,207,189,41,14
+    PUSHBUTTON      "JOG-",IDC_BUTTON_JOGM,17,190,39,14
+    LTEXT           "启动速度",IDC_STATIC,118,252,33,8
+    EDITTEXT        IDC_EDIT_startSpeed,155,249,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_startSpeed,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,209,248,11,14
+    LTEXT           "目标速度",IDC_STATIC,118,271,33,8
+    EDITTEXT        IDC_EDIT_targetSpeed,155,267,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_targetspeed,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,209,267,11,14
+    LTEXT           "加速度",IDC_STATIC,124,286,25,8
+    EDITTEXT        IDC_EDIT_accelspeed,155,284,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_accelspeed,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,209,283,11,14
+    LTEXT           "目标位置",IDC_STATIC,117,302,33,8
+    EDITTEXT        IDC_EDIT_steps,155,300,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_steps,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,209,299,11,14
+    PUSHBUTTON      "启动",IDC_BUTTON_start,137,321,41,14
+    LTEXT           "(counts/s)",IDC_STATIC_start,223,252,34,8
+    LTEXT           "(counts/s)",IDC_STATIC_target,223,270,34,8
+    LTEXT           "(counts/s2)",IDC_STATIC_accel,223,285,38,8
+    LTEXT           "(counts)",IDC_STATIC_steps,224,300,28,8
+    GROUPBOX        "轴3",IDC_STATIC,0,169,269,174
+    PUSHBUTTON      "停止",IDC_BUTTON_stop,195,321,40,14
+    PUSHBUTTON      "正限位",IDC_BUTTON_plusLimit,11,214,41,14
+    PUSHBUTTON      "零位开关",IDC_BUTTON_zeroSwitch,55,214,39,14
+    PUSHBUTTON      "负限位",IDC_BUTTON_minusLimit,99,214,44,14
+    PUSHBUTTON      "寻零",IDC_BUTTON_findZero,215,214,35,14
+    PUSHBUTTON      "设置绝对零位",IDC_BUTTON_absZero,151,214,53,14
+    LTEXT           "正限位",IDC_STATIC,49,283,40,11
+    PUSHBUTTON      "",IDC_BUTTON_plusLight,21,279,17,16
+    EDITTEXT        IDC_EDIT_absPostion,80,190,111,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "零位开关",IDC_STATIC,49,301,40,11
+    PUSHBUTTON      "",IDC_BUTTON_zeroLight,20,298,17,16
+    LTEXT           "负限位",IDC_STATIC,51,320,40,11
+    PUSHBUTTON      "",IDC_BUTTON_minusLight,20,317,17,16
+    LTEXT           "绝对位置",IDC_STATIC,107,178,40,11
+    COMBOBOX        IDC_COMBO_MODE2,425,233,96,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "模式",IDC_STATIC,400,235,17,8
+    PUSHBUTTON      "JOG+",IDC_BUTTON_JOGP2,477,188,41,14
+    PUSHBUTTON      "JOG-",IDC_BUTTON_JOGM2,287,190,39,14
+    LTEXT           "启动速度",IDC_STATIC,388,252,33,8
+    EDITTEXT        IDC_EDIT_startSpeed2,425,249,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_startSpeed2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,479,248,11,14
+    LTEXT           "目标速度",IDC_STATIC,388,270,33,8
+    EDITTEXT        IDC_EDIT_targetSpeed2,425,267,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_targetspeed2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,479,267,11,14
+    LTEXT           "加速度",IDC_STATIC,394,286,25,8
+    EDITTEXT        IDC_EDIT_accelspeed2,425,284,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_accelspeed2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,479,283,11,14
+    LTEXT           "目标位置",IDC_STATIC,387,302,33,8
+    EDITTEXT        IDC_EDIT_steps2,425,300,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_steps2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,479,299,11,14
+    PUSHBUTTON      "启动",IDC_BUTTON_start2,405,321,41,14
+    LTEXT           "(counts/s)",IDC_STATIC_start2,493,252,34,8
+    LTEXT           "(counts/s)",IDC_STATIC_target2,493,270,34,8
+    LTEXT           "(counts/s2)",IDC_STATIC_accel2,493,284,38,8
+    LTEXT           "(counts)",IDC_STATIC_steps2,494,300,28,8
+    GROUPBOX        "轴6",IDC_STATIC,270,169,271,174
+    PUSHBUTTON      "停止",IDC_BUTTON_stop2,465,321,40,14
+    PUSHBUTTON      "正限位",IDC_BUTTON_plusLimit2,281,214,41,14
+    PUSHBUTTON      "零位开关",IDC_BUTTON_zeroSwitch2,325,214,39,14
+    PUSHBUTTON      "负限位",IDC_BUTTON_minusLimit2,369,214,44,14
+    PUSHBUTTON      "寻零",IDC_BUTTON_findZero2,485,214,35,14
+    PUSHBUTTON      "设置绝对零位",IDC_BUTTON_absZero2,421,214,53,14
+    LTEXT           "正限位",IDC_STATIC,315,282,40,11
+    PUSHBUTTON      "",IDC_BUTTON_plusLight2,287,279,17,16
+    EDITTEXT        IDC_EDIT_absPostion2,350,190,111,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "零位开关",IDC_STATIC,316,301,37,11
+    PUSHBUTTON      "",IDC_BUTTON_zeroLight2,287,298,17,16
+    LTEXT           "负限位",IDC_STATIC,315,320,26,11
+    PUSHBUTTON      "",IDC_BUTTON_minusLight2,287,317,17,16
+    LTEXT           "绝对位置",IDC_STATIC,377,177,40,11
+    COMBOBOX        IDC_COMBO_unit,41,250,66,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "单位",IDC_STATIC,17,250,17,8
+    EDITTEXT        IDC_EDIT_unit,41,262,66,14,ES_AUTOHSCROLL
+    LTEXT           "单位比例",IDC_STATIC,2,264,33,8
+    COMBOBOX        IDC_COMBO_unit2,312,251,66,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "单位",IDC_STATIC,288,251,17,8
+    EDITTEXT        IDC_EDIT_unit2,312,263,66,14,ES_AUTOHSCROLL
+    LTEXT           "单位比例",IDC_STATIC,273,265,33,8
+    PUSHBUTTON      "",IDC_BUTTON_save,0,2,26,20
+    PUSHBUTTON      "",IDC_BUTTON_default,0,31,26,20
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,0,166,540,1
+    PUSHBUTTON      "对位",IDC_BUTTON_save8,0,57,26,29
+    PUSHBUTTON      "监控",IDC_BUTTON_default2,0,108,26,20
+    GROUPBOX        "对位相机",IDC_STATIC,42,7,229,154
+    GROUPBOX        "监控相机",IDC_STATIC,291,6,229,154
+END
+
+IDD_DIALOG_SERIAL2 DIALOGEX 0, 0, 678, 195
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "绝对位置",IDC_RADIO_absPosition3,"Button",BS_AUTORADIOBUTTON | WS_GROUP,12,86,48,10
+    CONTROL         "相对位置",IDC_RADIO_relPosition3,"Button",BS_AUTORADIOBUTTON,71,86,48,10
+    CONTROL         "绝对位置",IDC_RADIO_absPosition4,"Button",BS_AUTORADIOBUTTON | WS_GROUP,273,85,48,10
+    CONTROL         "相对位置",IDC_RADIO_relPosition4,"Button",BS_AUTORADIOBUTTON,332,85,48,10
+    COMBOBOX        IDC_COMBO_MODE,150,87,96,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "模式",IDC_STATIC,125,89,17,8
+    PUSHBUTTON      "JOG+",IDC_BUTTON_JOGP,202,42,41,14
+    PUSHBUTTON      "JOG-",IDC_BUTTON_JOGM,12,42,39,14
+    LTEXT           "启动速度",IDC_STATIC,113,106,33,8
+    EDITTEXT        IDC_EDIT_startSpeed,150,103,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_startSpeed,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,102,11,14
+    LTEXT           "目标速度",IDC_STATIC,113,125,33,8
+    EDITTEXT        IDC_EDIT_targetSpeed,150,121,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_targetspeed,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,121,11,14
+    LTEXT           "加速度",IDC_STATIC,119,140,25,8
+    EDITTEXT        IDC_EDIT_accelspeed,150,138,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_accelspeed,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,137,11,14
+    LTEXT           "目标位置",IDC_STATIC,112,156,33,8
+    EDITTEXT        IDC_EDIT_steps,150,154,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_steps,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,153,11,14
+    PUSHBUTTON      "启动",IDC_BUTTON_start,131,174,40,14
+    LTEXT           "(counts/s)",IDC_STATIC_start3,218,106,34,8
+    LTEXT           "(counts/s)",IDC_STATIC_target3,218,124,34,8
+    LTEXT           "(counts/s2)",IDC_STATIC_accel3,218,139,38,8
+    LTEXT           "(counts)",IDC_STATIC_steps3,219,154,28,8
+    GROUPBOX        "轴1",IDC_STATIC,0,25,258,170
+    PUSHBUTTON      "停止",IDC_BUTTON_stop,190,174,40,14
+    PUSHBUTTON      "正限位",IDC_BUTTON_plusLimit,12,67,41,14
+    PUSHBUTTON      "零位开关",IDC_BUTTON_zeroSwitch,58,67,39,14
+    PUSHBUTTON      "负限位",IDC_BUTTON_minusLimit,100,67,44,14
+    PUSHBUTTON      "寻零",IDC_BUTTON_findZero,210,67,35,14
+    PUSHBUTTON      "设置绝对零位",IDC_BUTTON_absZero,150,67,53,14
+    LTEXT           "正限位",IDC_STATIC,43,140,27,11
+    PUSHBUTTON      "",IDC_BUTTON_plusLight,14,136,17,16
+    EDITTEXT        IDC_EDIT_absPostion,75,43,111,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "零位开关",IDC_STATIC,43,158,33,11
+    PUSHBUTTON      "",IDC_BUTTON_zeroLight,14,155,17,16
+    LTEXT           "负限位",IDC_STATIC,43,177,28,11
+    PUSHBUTTON      "",IDC_BUTTON_minusLight,14,174,17,16
+    LTEXT           "绝对位置",IDC_STATIC,102,32,40,11
+    COMBOBOX        IDC_COMBO_MODE2,413,86,96,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "模式",IDC_STATIC,388,88,17,8
+    PUSHBUTTON      "JOG+",IDC_BUTTON_JOGP2,465,42,41,14
+    PUSHBUTTON      "JOG-",IDC_BUTTON_JOGM2,275,42,39,14
+    LTEXT           "启动速度",IDC_STATIC,376,105,33,8
+    EDITTEXT        IDC_EDIT_startSpeed2,413,102,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_startSpeed2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,467,101,11,14
+    LTEXT           "目标速度",IDC_STATIC,376,122,33,8
+    EDITTEXT        IDC_EDIT_targetSpeed2,413,120,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_targetspeed2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,467,120,11,14
+    LTEXT           "加速度",IDC_STATIC,382,139,25,8
+    EDITTEXT        IDC_EDIT_accelspeed2,413,137,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_accelspeed2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,467,136,11,14
+    LTEXT           "目标位置",IDC_STATIC,375,155,33,8
+    EDITTEXT        IDC_EDIT_steps2,413,153,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_steps2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,467,152,11,14
+    PUSHBUTTON      "启动",IDC_BUTTON_start2,393,174,40,14
+    LTEXT           "(counts/s)",IDC_STATIC_start4,481,105,34,8
+    LTEXT           "(counts/s)",IDC_STATIC_target4,481,123,34,8
+    LTEXT           "(counts/s2)",IDC_STATIC_accel4,481,138,38,8
+    LTEXT           "(counts)",IDC_STATIC_steps4,482,153,28,8
+    GROUPBOX        "轴2",IDC_STATIC,261,25,261,167
+    PUSHBUTTON      "停止",IDC_BUTTON_stop2,453,174,40,14
+    PUSHBUTTON      "正限位",IDC_BUTTON_plusLimit2,269,67,41,14
+    PUSHBUTTON      "零位开关",IDC_BUTTON_zeroSwitch2,313,67,39,14
+    PUSHBUTTON      "负限位",IDC_BUTTON_minusLimit2,357,67,44,14
+    PUSHBUTTON      "寻零",IDC_BUTTON_findZero2,473,67,35,14
+    PUSHBUTTON      "设置绝对零位",IDC_BUTTON_absZero2,409,67,53,14
+    LTEXT           "正限位",IDC_STATIC,305,139,40,11
+    PUSHBUTTON      "",IDC_BUTTON_plusLight2,275,135,17,16
+    EDITTEXT        IDC_EDIT_absPostion2,338,43,111,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "零位开关",IDC_STATIC,305,157,40,11
+    PUSHBUTTON      "",IDC_BUTTON_zeroLight2,275,154,17,16
+    LTEXT           "负限位",IDC_STATIC,305,176,40,11
+    PUSHBUTTON      "",IDC_BUTTON_minusLight2,275,173,17,16
+    LTEXT           "绝对位置",IDC_STATIC,365,32,40,11
+    COMBOBOX        IDC_COMBO_MODE3,564,86,96,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "模式",IDC_STATIC,545,90,17,8
+    LTEXT           "目标速度",IDC_STATIC,533,104,33,8
+    EDITTEXT        IDC_EDIT_targetSpeed3,570,102,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_targetspeed3,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,624,102,11,14
+    LTEXT           "加速度",IDC_STATIC,539,120,25,8
+    EDITTEXT        IDC_EDIT_accelspeed3,570,118,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_accelspeed3,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,624,118,11,14
+    LTEXT           "目标位置",IDC_STATIC,532,136,33,8
+    EDITTEXT        IDC_EDIT_steps3,570,134,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_steps3,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,624,134,11,14
+    PUSHBUTTON      "启动",IDC_BUTTON_start3,552,174,41,14
+    LTEXT           "(counts/s)",IDC_STATIC_target5,638,104,34,8
+    LTEXT           "(counts/s2)",IDC_STATIC_accel5,638,120,38,8
+    LTEXT           "(counts)",IDC_STATIC_steps5,639,134,28,8
+    GROUPBOX        "轴9",IDC_STATIC,528,25,150,167
+    PUSHBUTTON      "停止",IDC_BUTTON_stop3,610,174,40,14
+    PUSHBUTTON      "寻零",IDC_BUTTON_findZero3,630,67,35,14
+    PUSHBUTTON      "使能",IDC_BUTTON_ENABLE,583,67,35,14
+    EDITTEXT        IDC_EDIT_absPostion3,534,43,111,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "绝对位置",IDC_STATIC,573,32,40,11
+    COMBOBOX        IDC_COMBO_unit3,41,104,66,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "单位",IDC_STATIC,17,104,17,8
+    EDITTEXT        IDC_EDIT_unit3,41,116,66,14,ES_AUTOHSCROLL
+    LTEXT           "单位比例",IDC_STATIC,2,118,33,8
+    COMBOBOX        IDC_COMBO_unit4,305,103,66,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "单位",IDC_STATIC,278,103,17,8
+    EDITTEXT        IDC_EDIT_unit4,302,115,66,14,ES_AUTOHSCROLL
+    LTEXT           "单位比例",IDC_STATIC,263,117,33,8
+    PUSHBUTTON      "",IDC_BUTTON_save2,6,0,30,24
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,0,24,672,1
+    PUSHBUTTON      "",IDC_BUTTON_default,42,0,30,24
+END
+
+IDD_DIALOG_SERIAL3 DIALOGEX 0, 0, 535, 369
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_MODE,150,88,96,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "模式",IDC_STATIC,125,90,17,8
+    PUSHBUTTON      "JOG+",IDC_BUTTON_JOGP,202,44,41,14
+    PUSHBUTTON      "JOG-",IDC_BUTTON_JOGM,12,44,39,14
+    LTEXT           "启动速度",IDC_STATIC,113,107,33,8
+    EDITTEXT        IDC_EDIT_startSpeed,150,104,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_startSpeed,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,103,11,14
+    LTEXT           "目标速度",IDC_STATIC,113,125,33,8
+    EDITTEXT        IDC_EDIT_targetSpeed,150,122,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_targetspeed,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,122,11,14
+    LTEXT           "加速度",IDC_STATIC,119,141,25,8
+    EDITTEXT        IDC_EDIT_accelspeed,150,139,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_accelspeed,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,138,11,14
+    LTEXT           "目标位置",IDC_STATIC,112,157,33,8
+    EDITTEXT        IDC_EDIT_steps,150,155,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_steps,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,154,11,14
+    PUSHBUTTON      "启动",IDC_BUTTON_start,131,176,41,14
+    LTEXT           "(counts/s)",IDC_STATIC_start6,218,107,34,8
+    LTEXT           "(counts/s)",IDC_STATIC_target6,218,125,34,8
+    LTEXT           "(counts/s2)",IDC_STATIC_accel6,218,140,38,8
+    LTEXT           "(counts)",IDC_STATIC_steps6,219,155,28,8
+    GROUPBOX        "轴4",IDC_STATIC,0,27,265,171
+    PUSHBUTTON      "停止",IDC_BUTTON_stop,190,176,40,14
+    PUSHBUTTON      "正限位",IDC_BUTTON_plusLimit,6,69,41,14
+    PUSHBUTTON      "零位开关",IDC_BUTTON_zeroSwitch,50,69,39,14
+    PUSHBUTTON      "负限位",IDC_BUTTON_minusLimit,94,69,44,14
+    PUSHBUTTON      "寻零",IDC_BUTTON_findZero,210,69,35,14
+    PUSHBUTTON      "设置绝对零位",IDC_BUTTON_absZero,146,69,53,14
+    LTEXT           "正限位",IDC_STATIC,43,139,40,11
+    PUSHBUTTON      "",IDC_BUTTON_plusLight,15,135,17,16
+    EDITTEXT        IDC_EDIT_absPostion,75,45,111,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "零位开关",IDC_STATIC,43,161,40,11
+    PUSHBUTTON      "",IDC_BUTTON_zeroLight,15,156,17,16
+    LTEXT           "负限位",IDC_STATIC,43,181,40,11
+    PUSHBUTTON      "",IDC_BUTTON_minusLight,15,177,17,16
+    LTEXT           "绝对位置",IDC_STATIC,102,33,40,11
+    COMBOBOX        IDC_COMBO_MODE2,420,88,96,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "模式",IDC_STATIC,395,90,17,8
+    PUSHBUTTON      "JOG+",IDC_BUTTON_JOGP2,472,44,41,14
+    PUSHBUTTON      "JOG-",IDC_BUTTON_JOGM2,282,44,39,14
+    LTEXT           "启动速度",IDC_STATIC,383,107,33,8
+    EDITTEXT        IDC_EDIT_startSpeed2,420,104,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_startSpeed2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,474,103,11,14
+    LTEXT           "目标速度",IDC_STATIC,383,125,33,8
+    EDITTEXT        IDC_EDIT_targetSpeed2,420,122,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_targetspeed2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,474,122,11,14
+    LTEXT           "加速度",IDC_STATIC,389,141,25,8
+    EDITTEXT        IDC_EDIT_accelspeed2,420,139,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_accelspeed2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,474,138,11,14
+    LTEXT           "目标位置",IDC_STATIC,382,157,33,8
+    EDITTEXT        IDC_EDIT_steps2,420,155,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_steps2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,474,154,11,14
+    PUSHBUTTON      "启动",IDC_BUTTON_start2,402,176,41,14
+    LTEXT           "(counts/s)",IDC_STATIC_start7,488,107,34,8
+    LTEXT           "(counts/s)",IDC_STATIC_target7,488,125,34,8
+    LTEXT           "(counts/s2)",IDC_STATIC_accel7,488,140,38,8
+    LTEXT           "(counts)",IDC_STATIC_steps7,489,155,28,8
+    GROUPBOX        "轴5",IDC_STATIC,270,27,265,171
+    PUSHBUTTON      "停止",IDC_BUTTON_stop2,460,176,40,14
+    PUSHBUTTON      "正限位",IDC_BUTTON_plusLimit2,276,69,41,14
+    PUSHBUTTON      "零位开关",IDC_BUTTON_zeroSwitch2,320,69,39,14
+    PUSHBUTTON      "负限位",IDC_BUTTON_minusLimit2,364,69,44,14
+    PUSHBUTTON      "寻零",IDC_BUTTON_findZero2,480,69,35,14
+    PUSHBUTTON      "设置绝对零位",IDC_BUTTON_absZero2,416,69,53,14
+    LTEXT           "正限位",IDC_STATIC,317,139,40,11
+    PUSHBUTTON      "",IDC_BUTTON_plusLight2,288,135,17,16
+    EDITTEXT        IDC_EDIT_absPostion2,345,45,111,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "零位开关",IDC_STATIC,317,160,40,11
+    PUSHBUTTON      "",IDC_BUTTON_zeroLight2,288,156,17,16
+    LTEXT           "负限位",IDC_STATIC,317,181,40,11
+    PUSHBUTTON      "",IDC_BUTTON_minusLight2,288,177,17,16
+    LTEXT           "绝对位置",IDC_STATIC,372,33,40,11
+    COMBOBOX        IDC_COMBO_MODE3,150,262,96,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "模式",IDC_STATIC,125,264,17,8
+    PUSHBUTTON      "JOG+",IDC_BUTTON_JOGP3,202,218,41,14
+    PUSHBUTTON      "JOG-",IDC_BUTTON_JOGM3,12,218,39,14
+    LTEXT           "启动速度",IDC_STATIC,113,281,33,8
+    EDITTEXT        IDC_EDIT_startSpeed3,150,278,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_startSpeed3,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,277,11,14
+    LTEXT           "目标速度",IDC_STATIC,113,299,33,8
+    EDITTEXT        IDC_EDIT_targetSpeed3,150,296,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_targetspeed3,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,296,11,14
+    LTEXT           "加速度",IDC_STATIC,119,315,25,8
+    EDITTEXT        IDC_EDIT_accelspeed3,150,313,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_accelspeed3,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,312,11,14
+    LTEXT           "目标位置",IDC_STATIC,112,331,33,8
+    EDITTEXT        IDC_EDIT_steps3,150,329,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_steps3,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,328,11,14
+    PUSHBUTTON      "启动",IDC_BUTTON_start3,131,350,41,14
+    LTEXT           "(counts/s)",IDC_STATIC_start8,218,281,34,8
+    LTEXT           "(counts/s)",IDC_STATIC_target8,218,299,34,8
+    LTEXT           "(counts/s2)",IDC_STATIC_accel8,218,314,38,8
+    LTEXT           "(counts)",IDC_STATIC_steps8,219,329,28,8
+    GROUPBOX        "轴7",IDC_STATIC,0,201,264,168
+    PUSHBUTTON      "停止",IDC_BUTTON_stop3,190,350,40,14
+    PUSHBUTTON      "正限位",IDC_BUTTON_plusLimit3,6,243,41,14
+    PUSHBUTTON      "零位开关",IDC_BUTTON_zeroSwitch3,50,243,39,14
+    PUSHBUTTON      "负限位",IDC_BUTTON_minusLimit3,94,243,44,14
+    PUSHBUTTON      "寻零",IDC_BUTTON_findZero3,210,243,35,14
+    PUSHBUTTON      "设置绝对零位",IDC_BUTTON_absZero3,146,243,53,14
+    LTEXT           "正限位",IDC_STATIC,42,314,40,11
+    PUSHBUTTON      "",IDC_BUTTON_plusLight3,16,310,17,16
+    EDITTEXT        IDC_EDIT_absPostion3,75,219,111,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "零位开关",IDC_STATIC,41,333,40,11
+    PUSHBUTTON      "",IDC_BUTTON_zeroLight3,16,331,17,16
+    LTEXT           "负限位",IDC_STATIC,43,355,40,11
+    PUSHBUTTON      "",IDC_BUTTON_minusLight3,16,352,17,16
+    LTEXT           "绝对位置",IDC_STATIC,102,207,40,11
+    COMBOBOX        IDC_COMBO_MODE4,420,262,96,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "模式",IDC_STATIC,395,264,17,8
+    PUSHBUTTON      "JOG+",IDC_BUTTON_JOGP4,472,218,41,14
+    PUSHBUTTON      "JOG-",IDC_BUTTON_JOGM4,282,218,39,14
+    LTEXT           "启动速度",IDC_STATIC,383,281,33,8
+    EDITTEXT        IDC_EDIT_startSpeed4,420,278,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_startSpeed4,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,474,277,11,14
+    LTEXT           "目标速度",IDC_STATIC,383,299,33,8
+    EDITTEXT        IDC_EDIT_targetSpeed4,420,296,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_targetspeed4,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,474,296,11,14
+    LTEXT           "加速度",IDC_STATIC,389,315,25,8
+    EDITTEXT        IDC_EDIT_accelspeed4,420,313,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_accelspeed4,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,474,312,11,14
+    LTEXT           "目标位置",IDC_STATIC,382,331,33,8
+    EDITTEXT        IDC_EDIT_steps4,420,329,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_steps4,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,474,328,11,14
+    PUSHBUTTON      "启动",IDC_BUTTON_start4,402,350,41,14
+    LTEXT           "(counts/s)",IDC_STATIC_start9,488,281,34,8
+    LTEXT           "(counts/s)",IDC_STATIC_target9,488,299,34,8
+    LTEXT           "(counts/s2)",IDC_STATIC_accel9,488,314,38,8
+    LTEXT           "(counts)",IDC_STATIC_steps9,489,329,28,8
+    GROUPBOX        "轴8",IDC_STATIC,270,201,264,168
+    PUSHBUTTON      "停止",IDC_BUTTON_stop4,460,350,40,14
+    PUSHBUTTON      "正限位",IDC_BUTTON_plusLimit4,276,243,41,14
+    PUSHBUTTON      "零位开关",IDC_BUTTON_zeroSwitch4,320,243,39,14
+    PUSHBUTTON      "负限位",IDC_BUTTON_minusLimit4,364,243,44,14
+    PUSHBUTTON      "寻零",IDC_BUTTON_findZero4,480,243,35,14
+    PUSHBUTTON      "设置绝对零位",IDC_BUTTON_absZero4,416,243,53,14
+    LTEXT           "正限位",IDC_STATIC,310,313,40,11
+    PUSHBUTTON      "",IDC_BUTTON_plusLight4,284,310,17,16
+    EDITTEXT        IDC_EDIT_absPostion4,345,219,111,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "零位开关",IDC_STATIC,310,334,40,11
+    PUSHBUTTON      "",IDC_BUTTON_zeroLight4,284,331,17,16
+    LTEXT           "负限位",IDC_STATIC,310,355,40,11
+    PUSHBUTTON      "",IDC_BUTTON_minusLight4,284,352,17,16
+    LTEXT           "绝对位置",IDC_STATIC,372,207,40,11
+    CONTROL         "绝对位置",IDC_RADIO_absPosition6,"Button",BS_AUTORADIOBUTTON | WS_GROUP,15,87,48,10
+    CONTROL         "相对位置",IDC_RADIO_relPosition6,"Button",BS_AUTORADIOBUTTON,69,87,48,10
+    COMBOBOX        IDC_COMBO_unit6,39,105,66,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "单位",IDC_STATIC,15,105,17,8
+    EDITTEXT        IDC_EDIT_unit6,39,117,66,14,ES_AUTOHSCROLL
+    LTEXT           "单位比例",IDC_STATIC,0,119,33,8
+    CONTROL         "绝对位置",IDC_RADIO_absPosition7,"Button",BS_AUTORADIOBUTTON | WS_GROUP,288,87,48,10
+    CONTROL         "相对位置",IDC_RADIO_relPosition7,"Button",BS_AUTORADIOBUTTON,342,87,48,10
+    COMBOBOX        IDC_COMBO_unit7,312,105,66,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "单位",IDC_STATIC,288,105,17,8
+    EDITTEXT        IDC_EDIT_unit7,312,117,66,14,ES_AUTOHSCROLL
+    LTEXT           "单位比例",IDC_STATIC,273,119,33,8
+    CONTROL         "绝对位置",IDC_RADIO_absPosition8,"Button",BS_AUTORADIOBUTTON | WS_GROUP,15,263,48,10
+    CONTROL         "相对位置",IDC_RADIO_relPosition8,"Button",BS_AUTORADIOBUTTON,69,263,48,10
+    COMBOBOX        IDC_COMBO_unit8,39,281,66,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "单位",IDC_STATIC,15,281,17,8
+    EDITTEXT        IDC_EDIT_unit8,39,293,66,14,ES_AUTOHSCROLL
+    LTEXT           "单位比例",IDC_STATIC,0,295,33,8
+    CONTROL         "绝对位置",IDC_RADIO_absPosition9,"Button",BS_AUTORADIOBUTTON | WS_GROUP,283,264,48,10
+    CONTROL         "相对位置",IDC_RADIO_relPosition9,"Button",BS_AUTORADIOBUTTON,337,264,48,10
+    COMBOBOX        IDC_COMBO_unit9,309,282,66,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "单位",IDC_STATIC,287,282,17,8
+    EDITTEXT        IDC_EDIT_unit9,309,293,66,14,ES_AUTOHSCROLL
+    LTEXT           "单位比例",IDC_STATIC,272,296,33,8
+    PUSHBUTTON      "",IDC_BUTTON_save3,0,0,30,24
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,0,24,534,1
+    PUSHBUTTON      "",IDC_BUTTON_default3,36,0,30,24
+    PUSHBUTTON      "开上光源",IDC_BUTTON_openup,74,0,48,24
+    PUSHBUTTON      "开下光源",IDC_BUTTON_opendown,126,0,48,24
+    PUSHBUTTON      "1号吸附头吸气",IDC_BUTTON_inhale,178,0,58,24
+    PUSHBUTTON      "2号吸附头吸气",IDC_BUTTON_inhale2,242,0,56,24
+END
+
+IDD_DIALOG_SERIAL4 DIALOGEX 0, 0, 541, 213
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_MODE,156,99,96,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "模式",IDC_STATIC,131,100,17,8
+    PUSHBUTTON      "JOG+",IDC_BUTTON_JOGP,208,53,41,14
+    PUSHBUTTON      "JOG-",IDC_BUTTON_JOGM,18,53,39,14
+    LTEXT           "启动速度",IDC_STATIC,119,117,33,8
+    EDITTEXT        IDC_EDIT_startSpeed,156,114,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_startSpeed,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,210,113,11,14
+    LTEXT           "目标速度",IDC_STATIC,119,136,33,8
+    EDITTEXT        IDC_EDIT_targetSpeed,156,132,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_targetspeed,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,210,132,11,14
+    LTEXT           "加速度",IDC_STATIC,125,151,25,8
+    EDITTEXT        IDC_EDIT_accelspeed,156,149,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_accelspeed,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,210,148,11,14
+    LTEXT           "目标位置",IDC_STATIC,118,167,33,8
+    EDITTEXT        IDC_EDIT_steps,156,165,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_steps,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,210,164,11,14
+    PUSHBUTTON      "启动",IDC_BUTTON_start,138,186,41,14
+    LTEXT           "(counts/s)",IDC_STATIC_start,224,117,34,8
+    LTEXT           "(counts/s)",IDC_STATIC_target,224,135,34,8
+    LTEXT           "(counts/s2)",IDC_STATIC_accel,224,150,38,8
+    LTEXT           "(counts)",IDC_STATIC_steps,225,165,28,8
+    GROUPBOX        "轴3",IDC_STATIC,0,30,265,182
+    PUSHBUTTON      "停止",IDC_BUTTON_stop,196,186,40,14
+    PUSHBUTTON      "正限位",IDC_BUTTON_plusLimit,12,79,41,14
+    PUSHBUTTON      "零位开关",IDC_BUTTON_zeroSwitch,56,79,39,14
+    PUSHBUTTON      "负限位",IDC_BUTTON_minusLimit,100,79,44,14
+    PUSHBUTTON      "寻零",IDC_BUTTON_findZero,216,79,35,14
+    PUSHBUTTON      "设置绝对零位",IDC_BUTTON_absZero,152,79,53,14
+    LTEXT           "正限位",IDC_STATIC,43,149,40,11
+    PUSHBUTTON      "",IDC_BUTTON_plusLight,18,145,17,16
+    EDITTEXT        IDC_EDIT_absPostion,81,55,111,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "零位开关",IDC_STATIC,43,169,40,11
+    PUSHBUTTON      "",IDC_BUTTON_zeroLight,18,165,17,16
+    LTEXT           "负限位",IDC_STATIC,43,189,40,11
+    PUSHBUTTON      "",IDC_BUTTON_minusLight,18,185,17,16
+    LTEXT           "绝对位置",IDC_STATIC,108,43,40,11
+    COMBOBOX        IDC_COMBO_MODE2,426,99,96,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "模式",IDC_STATIC,401,100,17,8
+    PUSHBUTTON      "JOG+",IDC_BUTTON_JOGP2,478,53,41,14
+    PUSHBUTTON      "JOG-",IDC_BUTTON_JOGM2,288,53,39,14
+    LTEXT           "启动速度",IDC_STATIC,389,117,33,8
+    EDITTEXT        IDC_EDIT_startSpeed2,426,114,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_startSpeed2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,480,113,11,14
+    LTEXT           "目标速度",IDC_STATIC,389,135,33,8
+    EDITTEXT        IDC_EDIT_targetSpeed2,426,132,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_targetspeed2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,480,132,11,14
+    LTEXT           "加速度",IDC_STATIC,395,151,25,8
+    EDITTEXT        IDC_EDIT_accelspeed2,426,149,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_accelspeed2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,480,148,11,14
+    LTEXT           "目标位置",IDC_STATIC,388,167,33,8
+    EDITTEXT        IDC_EDIT_steps2,426,165,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_steps2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,480,164,11,14
+    PUSHBUTTON      "启动",IDC_BUTTON_start2,405,186,41,14
+    LTEXT           "(counts/s)",IDC_STATIC_start2,494,117,34,8
+    LTEXT           "(counts/s)",IDC_STATIC_target2,494,135,34,8
+    LTEXT           "(counts/s2)",IDC_STATIC_accel2,494,149,38,8
+    LTEXT           "(counts)",IDC_STATIC_steps2,495,165,28,8
+    GROUPBOX        "轴6",IDC_STATIC,270,31,271,182
+    PUSHBUTTON      "停止",IDC_BUTTON_stop2,466,186,40,14
+    PUSHBUTTON      "正限位",IDC_BUTTON_plusLimit2,282,79,41,14
+    PUSHBUTTON      "零位开关",IDC_BUTTON_zeroSwitch2,326,79,39,14
+    PUSHBUTTON      "负限位",IDC_BUTTON_minusLimit2,370,79,44,14
+    PUSHBUTTON      "寻零",IDC_BUTTON_findZero2,486,79,35,14
+    PUSHBUTTON      "设置绝对零位",IDC_BUTTON_absZero2,422,79,53,14
+    LTEXT           "正限位",IDC_STATIC,313,148,40,11
+    PUSHBUTTON      "",IDC_BUTTON_plusLight2,288,145,17,16
+    EDITTEXT        IDC_EDIT_absPostion2,351,55,111,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "零位开关",IDC_STATIC,313,169,40,11
+    PUSHBUTTON      "",IDC_BUTTON_zeroLight2,288,165,17,16
+    LTEXT           "负限位",IDC_STATIC,313,189,40,11
+    PUSHBUTTON      "",IDC_BUTTON_minusLight2,288,185,17,16
+    LTEXT           "绝对位置",IDC_STATIC,378,42,40,11
+    CONTROL         "绝对位置",IDC_RADIO_absPosition,"Button",BS_AUTORADIOBUTTON | WS_GROUP,18,97,48,10
+    CONTROL         "相对位置",IDC_RADIO_relPosition,"Button",BS_AUTORADIOBUTTON,72,97,48,10
+    COMBOBOX        IDC_COMBO_unit,42,115,66,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "单位",IDC_STATIC,18,115,17,8
+    EDITTEXT        IDC_EDIT_unit,42,127,66,14,ES_AUTOHSCROLL
+    LTEXT           "单位比例",IDC_STATIC,3,129,33,8
+    CONTROL         "绝对位置",IDC_RADIO_absPosition2,"Button",BS_AUTORADIOBUTTON | WS_GROUP,282,99,48,10
+    CONTROL         "相对位置",IDC_RADIO_relPosition2,"Button",BS_AUTORADIOBUTTON,336,99,48,10
+    COMBOBOX        IDC_COMBO_unit2,313,116,66,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "单位",IDC_STATIC,289,116,17,8
+    EDITTEXT        IDC_EDIT_unit2,313,128,66,14,ES_AUTOHSCROLL
+    LTEXT           "单位比例",IDC_STATIC,274,130,33,8
+    PUSHBUTTON      "",IDC_BUTTON_save4,0,0,30,24
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,0,24,540,2
+    PUSHBUTTON      "",IDC_BUTTON_default4,36,0,30,24
+END
+
+IDD_DIALOG_SERIAL5 DIALOGEX 0, 0, 672, 195
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "绝对位置",IDC_RADIO_absPosition3,"Button",BS_AUTORADIOBUTTON | WS_GROUP,12,87,48,10
+    CONTROL         "相对位置",IDC_RADIO_relPosition3,"Button",BS_AUTORADIOBUTTON,71,87,48,10
+    CONTROL         "绝对位置",IDC_RADIO_absPosition4,"Button",BS_AUTORADIOBUTTON | WS_GROUP,274,87,48,10
+    CONTROL         "相对位置",IDC_RADIO_relPosition4,"Button",BS_AUTORADIOBUTTON,333,87,48,10
+    COMBOBOX        IDC_COMBO_MODE,150,88,96,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "模式",IDC_STATIC,125,90,17,8
+    PUSHBUTTON      "JOG+",IDC_BUTTON_JOGP,202,44,41,14
+    PUSHBUTTON      "JOG-",IDC_BUTTON_JOGM,12,44,39,14
+    LTEXT           "启动速度",IDC_STATIC,113,108,33,8
+    EDITTEXT        IDC_EDIT_startSpeed,150,105,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_startSpeed,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,103,11,14
+    LTEXT           "目标速度",IDC_STATIC,113,126,33,8
+    EDITTEXT        IDC_EDIT_targetSpeed,150,122,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_targetspeed,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,122,11,14
+    LTEXT           "加速度",IDC_STATIC,119,142,25,8
+    EDITTEXT        IDC_EDIT_accelspeed,150,140,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_accelspeed,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,138,11,14
+    LTEXT           "目标位置",IDC_STATIC,112,158,33,8
+    EDITTEXT        IDC_EDIT_steps,150,156,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_steps,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,154,11,14
+    PUSHBUTTON      "启动",IDC_BUTTON_start,129,175,41,14
+    LTEXT           "(counts/s)",IDC_STATIC_start3,218,108,34,8
+    LTEXT           "(counts/s)",IDC_STATIC_target3,218,126,34,8
+    LTEXT           "(counts/s2)",IDC_STATIC_accel3,218,140,38,8
+    LTEXT           "(counts)",IDC_STATIC_steps3,219,156,28,8
+    GROUPBOX        "轴1",IDC_STATIC,0,28,258,167
+    PUSHBUTTON      "停止",IDC_BUTTON_stop,190,175,40,14
+    PUSHBUTTON      "正限位",IDC_BUTTON_plusLimit,12,65,41,14
+    PUSHBUTTON      "零位开关",IDC_BUTTON_zeroSwitch,58,65,39,14
+    PUSHBUTTON      "负限位",IDC_BUTTON_minusLimit,100,65,44,14
+    PUSHBUTTON      "寻零",IDC_BUTTON_findZero,210,65,35,14
+    PUSHBUTTON      "设置绝对零位",IDC_BUTTON_absZero,150,65,53,14
+    LTEXT           "正限位",IDC_STATIC,43,140,40,11
+    PUSHBUTTON      "",IDC_BUTTON_plusLight,19,135,17,16
+    EDITTEXT        IDC_EDIT_absPostion,75,46,111,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "零位开关",IDC_STATIC,43,158,40,11
+    PUSHBUTTON      "",IDC_BUTTON_zeroLight,19,153,17,16
+    LTEXT           "负限位",IDC_STATIC,43,175,40,11
+    PUSHBUTTON      "",IDC_BUTTON_minusLight,19,172,17,16
+    LTEXT           "绝对位置",IDC_STATIC,102,33,40,11
+    COMBOBOX        IDC_COMBO_MODE2,414,88,96,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "模式",IDC_STATIC,389,89,17,8
+    PUSHBUTTON      "JOG+",IDC_BUTTON_JOGP2,466,44,41,14
+    PUSHBUTTON      "JOG-",IDC_BUTTON_JOGM2,276,44,39,14
+    LTEXT           "启动速度",IDC_STATIC,377,108,33,8
+    EDITTEXT        IDC_EDIT_startSpeed2,414,105,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_startSpeed2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,468,103,11,14
+    LTEXT           "目标速度",IDC_STATIC,377,126,33,8
+    EDITTEXT        IDC_EDIT_targetSpeed2,414,122,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_targetspeed2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,468,122,11,14
+    LTEXT           "加速度",IDC_STATIC,383,142,25,8
+    EDITTEXT        IDC_EDIT_accelspeed2,414,140,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_accelspeed2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,468,138,11,14
+    LTEXT           "目标位置",IDC_STATIC,376,158,33,8
+    EDITTEXT        IDC_EDIT_steps2,414,156,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_steps2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,468,154,11,14
+    PUSHBUTTON      "启动",IDC_BUTTON_start2,396,175,41,14
+    LTEXT           "(counts/s)",IDC_STATIC_start4,482,108,34,8
+    LTEXT           "(counts/s)",IDC_STATIC_target4,482,126,34,8
+    LTEXT           "(counts/s2)",IDC_STATIC_accel4,482,140,38,8
+    LTEXT           "(counts)",IDC_STATIC_steps4,483,156,28,8
+    GROUPBOX        "轴2",IDC_STATIC,261,28,261,167
+    PUSHBUTTON      "停止",IDC_BUTTON_stop2,454,175,40,14
+    PUSHBUTTON      "正限位",IDC_BUTTON_plusLimit2,270,65,41,14
+    PUSHBUTTON      "零位开关",IDC_BUTTON_zeroSwitch2,314,65,39,14
+    PUSHBUTTON      "负限位",IDC_BUTTON_minusLimit2,358,65,44,14
+    PUSHBUTTON      "寻零",IDC_BUTTON_findZero2,474,65,35,14
+    PUSHBUTTON      "设置绝对零位",IDC_BUTTON_absZero2,410,65,53,14
+    LTEXT           "正限位",IDC_STATIC,307,140,40,11
+    PUSHBUTTON      "",IDC_BUTTON_plusLight2,281,135,17,16
+    EDITTEXT        IDC_EDIT_absPostion2,339,46,111,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "零位开关",IDC_STATIC,307,158,40,11
+    PUSHBUTTON      "",IDC_BUTTON_zeroLight2,281,153,17,16
+    LTEXT           "负限位",IDC_STATIC,307,177,40,11
+    PUSHBUTTON      "",IDC_BUTTON_minusLight2,281,172,17,16
+    LTEXT           "绝对位置",IDC_STATIC,366,33,40,11
+    COMBOBOX        IDC_COMBO_MODE3,570,88,96,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "模式",IDC_STATIC,545,89,17,8
+    LTEXT           "目标速度",IDC_STATIC,529,108,33,8
+    EDITTEXT        IDC_EDIT_targetSpeed3,566,106,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_targetspeed3,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,620,106,11,14
+    LTEXT           "加速度",IDC_STATIC,535,124,25,8
+    EDITTEXT        IDC_EDIT_accelspeed3,566,122,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_accelspeed3,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,620,122,11,14
+    LTEXT           "目标位置",IDC_STATIC,528,140,33,8
+    EDITTEXT        IDC_EDIT_steps3,566,138,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_steps3,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,620,138,11,14
+    PUSHBUTTON      "启动",IDC_BUTTON_start3,549,175,41,14
+    LTEXT           "(counts/s)",IDC_STATIC_target5,634,108,34,8
+    LTEXT           "(counts/s2)",IDC_STATIC_accel5,634,124,38,8
+    LTEXT           "(counts)",IDC_STATIC_steps5,635,138,28,8
+    GROUPBOX        "轴9",IDC_STATIC,528,28,144,167
+    PUSHBUTTON      "停止",IDC_BUTTON_stop3,610,175,40,14
+    PUSHBUTTON      "使能",IDC_BUTTON_ENABLE,582,65,41,14
+    PUSHBUTTON      "寻零",IDC_BUTTON_findZero3,630,65,35,14
+    EDITTEXT        IDC_EDIT_absPostion3,540,46,120,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "绝对位置",IDC_STATIC,589,33,40,11
+    COMBOBOX        IDC_COMBO_unit3,41,105,66,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "单位",IDC_STATIC,17,105,17,8
+    EDITTEXT        IDC_EDIT_unit3,41,118,66,14,ES_AUTOHSCROLL
+    LTEXT           "单位比例",IDC_STATIC,2,119,33,8
+    COMBOBOX        IDC_COMBO_unit4,306,105,66,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "单位",IDC_STATIC,279,105,17,8
+    EDITTEXT        IDC_EDIT_unit4,303,118,66,14,ES_AUTOHSCROLL
+    LTEXT           "单位比例",IDC_STATIC,264,119,33,8
+    PUSHBUTTON      "",IDC_BUTTON_save5,0,0,28,22
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,0,25,671,1
+    PUSHBUTTON      "",IDC_BUTTON_default5,33,0,28,22
+END
+
+IDD_DIALOG_SERIAL6 DIALOGEX 0, 0, 535, 375
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "轴4",IDC_STATIC,0,30,265,171
+    GROUPBOX        "轴8",IDC_STATIC,270,204,265,170
+    COMBOBOX        IDC_COMBO_MODE,150,91,96,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "模式",IDC_STATIC,125,93,17,8
+    PUSHBUTTON      "JOG+",IDC_BUTTON_JOGP,202,47,41,14
+    PUSHBUTTON      "JOG-",IDC_BUTTON_JOGM,12,47,39,14
+    LTEXT           "启动速度",IDC_STATIC,113,110,33,8
+    EDITTEXT        IDC_EDIT_startSpeed,150,107,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_startSpeed,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,106,11,14
+    LTEXT           "目标速度",IDC_STATIC,113,128,33,8
+    EDITTEXT        IDC_EDIT_targetSpeed,150,125,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_targetspeed,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,125,11,14
+    LTEXT           "加速度",IDC_STATIC,119,144,25,8
+    EDITTEXT        IDC_EDIT_accelspeed,150,142,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_accelspeed,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,141,11,14
+    LTEXT           "目标位置",IDC_STATIC,112,160,33,8
+    EDITTEXT        IDC_EDIT_steps,150,158,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_steps,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,157,11,14
+    PUSHBUTTON      "启动",IDC_BUTTON_start,130,179,41,14
+    LTEXT           "(counts/s)",IDC_STATIC_start6,218,110,34,8
+    LTEXT           "(counts/s)",IDC_STATIC_target6,218,128,34,8
+    LTEXT           "(counts/s2)",IDC_STATIC_accel6,218,143,38,8
+    LTEXT           "(counts)",IDC_STATIC_steps6,219,158,28,8
+    PUSHBUTTON      "停止",IDC_BUTTON_stop,190,179,40,14
+    PUSHBUTTON      "正限位",IDC_BUTTON_plusLimit,6,72,41,14
+    PUSHBUTTON      "零位开关",IDC_BUTTON_zeroSwitch,50,72,39,14
+    PUSHBUTTON      "负限位",IDC_BUTTON_minusLimit,94,72,44,14
+    PUSHBUTTON      "寻零",IDC_BUTTON_findZero,210,72,35,14
+    PUSHBUTTON      "设置绝对零位",IDC_BUTTON_absZero,146,72,53,14
+    LTEXT           "正限位",IDC_STATIC,40,140,40,11
+    PUSHBUTTON      "",IDC_BUTTON_plusLight,16,137,17,16
+    EDITTEXT        IDC_EDIT_absPostion,75,48,111,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "零位开关",IDC_STATIC,40,161,40,11
+    PUSHBUTTON      "",IDC_BUTTON_zeroLight,16,158,17,16
+    LTEXT           "负限位",IDC_STATIC,40,182,40,11
+    PUSHBUTTON      "",IDC_BUTTON_minusLight,16,179,17,16
+    LTEXT           "绝对位置",IDC_STATIC,102,36,40,11
+    COMBOBOX        IDC_COMBO_MODE2,420,91,96,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "模式",IDC_STATIC,395,93,17,8
+    PUSHBUTTON      "JOG+",IDC_BUTTON_JOGP2,472,47,41,14
+    PUSHBUTTON      "JOG-",IDC_BUTTON_JOGM2,282,47,39,14
+    LTEXT           "启动速度",IDC_STATIC,383,110,33,8
+    EDITTEXT        IDC_EDIT_startSpeed2,420,107,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_startSpeed2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,474,106,11,14
+    LTEXT           "目标速度",IDC_STATIC,383,128,33,8
+    EDITTEXT        IDC_EDIT_targetSpeed2,420,125,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_targetspeed2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,474,125,11,14
+    LTEXT           "加速度",IDC_STATIC,389,144,25,8
+    EDITTEXT        IDC_EDIT_accelspeed2,420,142,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_accelspeed2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,474,141,11,14
+    LTEXT           "目标位置",IDC_STATIC,382,160,33,8
+    EDITTEXT        IDC_EDIT_steps2,420,158,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_steps2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,474,157,11,14
+    PUSHBUTTON      "启动",IDC_BUTTON_start2,403,179,41,14
+    LTEXT           "(counts/s)",IDC_STATIC_start7,488,110,34,8
+    LTEXT           "(counts/s)",IDC_STATIC_target7,488,128,34,8
+    LTEXT           "(counts/s2)",IDC_STATIC_accel7,488,143,38,8
+    LTEXT           "(counts)",IDC_STATIC_steps7,489,158,28,8
+    GROUPBOX        "轴5",IDC_STATIC,270,30,265,171
+    PUSHBUTTON      "停止",IDC_BUTTON_stop2,460,179,40,14
+    PUSHBUTTON      "正限位",IDC_BUTTON_plusLimit2,276,72,41,14
+    PUSHBUTTON      "零位开关",IDC_BUTTON_zeroSwitch2,320,72,39,14
+    PUSHBUTTON      "负限位",IDC_BUTTON_minusLimit2,364,72,44,14
+    PUSHBUTTON      "寻零",IDC_BUTTON_findZero2,480,72,35,14
+    PUSHBUTTON      "设置绝对零位",IDC_BUTTON_absZero2,416,72,53,14
+    LTEXT           "正限位",IDC_STATIC,313,142,40,11
+    PUSHBUTTON      "",IDC_BUTTON_plusLight2,289,137,17,16
+    EDITTEXT        IDC_EDIT_absPostion2,345,48,111,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "零位开关",IDC_STATIC,313,162,40,11
+    PUSHBUTTON      "",IDC_BUTTON_zeroLight2,289,158,17,16
+    LTEXT           "负限位",IDC_STATIC,313,182,40,11
+    PUSHBUTTON      "",IDC_BUTTON_minusLight2,289,179,17,16
+    LTEXT           "绝对位置",IDC_STATIC,372,36,40,11
+    COMBOBOX        IDC_COMBO_MODE3,150,265,96,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "模式",IDC_STATIC,125,267,17,8
+    PUSHBUTTON      "JOG+",IDC_BUTTON_JOGP3,202,221,41,14
+    PUSHBUTTON      "JOG-",IDC_BUTTON_JOGM3,12,221,39,14
+    LTEXT           "启动速度",IDC_STATIC,113,284,33,8
+    EDITTEXT        IDC_EDIT_startSpeed3,150,281,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_startSpeed3,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,280,11,14
+    LTEXT           "目标速度",IDC_STATIC,113,302,33,8
+    EDITTEXT        IDC_EDIT_targetSpeed3,150,299,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_targetspeed3,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,299,11,14
+    LTEXT           "加速度",IDC_STATIC,119,318,25,8
+    EDITTEXT        IDC_EDIT_accelspeed3,150,316,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_accelspeed3,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,315,11,14
+    LTEXT           "目标位置",IDC_STATIC,112,334,33,8
+    EDITTEXT        IDC_EDIT_steps3,150,332,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_steps3,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,204,331,11,14
+    PUSHBUTTON      "启动",IDC_BUTTON_start3,129,353,41,14
+    LTEXT           "(counts/s)",IDC_STATIC_start8,218,284,34,8
+    LTEXT           "(counts/s)",IDC_STATIC_target8,218,302,34,8
+    LTEXT           "(counts/s2)",IDC_STATIC_accel8,218,317,38,8
+    LTEXT           "(counts)",IDC_STATIC_steps8,219,332,28,8
+    GROUPBOX        "轴7",IDC_STATIC,0,204,265,170
+    PUSHBUTTON      "停止",IDC_BUTTON_stop3,190,353,40,14
+    PUSHBUTTON      "正限位",IDC_BUTTON_plusLimit3,6,246,41,14
+    PUSHBUTTON      "零位开关",IDC_BUTTON_zeroSwitch3,50,246,39,14
+    PUSHBUTTON      "负限位",IDC_BUTTON_minusLimit3,94,246,44,14
+    PUSHBUTTON      "寻零",IDC_BUTTON_findZero3,210,246,35,14
+    PUSHBUTTON      "设置绝对零位",IDC_BUTTON_absZero3,146,246,53,14
+    LTEXT           "正限位",IDC_STATIC,39,316,40,11
+    PUSHBUTTON      "",IDC_BUTTON_plusLight3,15,312,17,16
+    EDITTEXT        IDC_EDIT_absPostion3,75,222,111,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "零位开关",IDC_STATIC,39,336,40,11
+    PUSHBUTTON      "",IDC_BUTTON_zeroLight3,15,332,17,16
+    LTEXT           "负限位",IDC_STATIC,39,356,40,11
+    PUSHBUTTON      "",IDC_BUTTON_minusLight3,15,352,17,16
+    LTEXT           "绝对位置",IDC_STATIC,102,210,40,11
+    COMBOBOX        IDC_COMBO_MODE4,420,265,96,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "模式",IDC_STATIC,395,267,17,8
+    PUSHBUTTON      "JOG+",IDC_BUTTON_JOGP4,472,221,41,14
+    PUSHBUTTON      "JOG-",IDC_BUTTON_JOGM4,282,221,39,14
+    LTEXT           "启动速度",IDC_STATIC,383,284,33,8
+    EDITTEXT        IDC_EDIT_startSpeed4,420,281,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_startSpeed4,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,474,280,11,14
+    LTEXT           "目标速度",IDC_STATIC,383,302,33,8
+    EDITTEXT        IDC_EDIT_targetSpeed4,420,299,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_targetspeed4,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,474,299,11,14
+    LTEXT           "加速度",IDC_STATIC,389,318,25,8
+    EDITTEXT        IDC_EDIT_accelspeed4,420,316,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_accelspeed4,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,474,315,11,14
+    LTEXT           "目标位置",IDC_STATIC,382,334,33,8
+    EDITTEXT        IDC_EDIT_steps4,420,332,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_steps4,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,474,331,11,14
+    PUSHBUTTON      "启动",IDC_BUTTON_start4,400,353,41,14
+    LTEXT           "(counts/s)",IDC_STATIC_start9,488,284,34,8
+    LTEXT           "(counts/s)",IDC_STATIC_target9,488,302,34,8
+    LTEXT           "(counts/s2)",IDC_STATIC_accel9,488,317,38,8
+    LTEXT           "(counts)",IDC_STATIC_steps9,489,332,28,8
+    PUSHBUTTON      "停止",IDC_BUTTON_stop4,460,353,40,14
+    PUSHBUTTON      "正限位",IDC_BUTTON_plusLimit4,276,246,41,14
+    PUSHBUTTON      "零位开关",IDC_BUTTON_zeroSwitch4,320,246,39,14
+    PUSHBUTTON      "负限位",IDC_BUTTON_minusLimit4,364,246,44,14
+    PUSHBUTTON      "寻零",IDC_BUTTON_findZero4,480,246,35,14
+    PUSHBUTTON      "设置绝对零位",IDC_BUTTON_absZero4,416,246,53,14
+    LTEXT           "正限位",IDC_STATIC,308,316,40,11
+    PUSHBUTTON      "",IDC_BUTTON_plusLight4,284,312,17,16
+    EDITTEXT        IDC_EDIT_absPostion4,345,222,111,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "零位开关",IDC_STATIC,308,336,40,11
+    PUSHBUTTON      "",IDC_BUTTON_zeroLight4,284,332,17,16
+    LTEXT           "负限位",IDC_STATIC,308,356,40,11
+    PUSHBUTTON      "",IDC_BUTTON_minusLight4,284,352,17,16
+    LTEXT           "绝对位置",IDC_STATIC,372,210,40,11
+    CONTROL         "绝对位置",IDC_RADIO_absPosition6,"Button",BS_AUTORADIOBUTTON | WS_GROUP,15,90,48,10
+    CONTROL         "相对位置",IDC_RADIO_relPosition6,"Button",BS_AUTORADIOBUTTON,69,90,48,10
+    COMBOBOX        IDC_COMBO_unit6,39,108,66,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "单位",IDC_STATIC,15,108,17,8
+    EDITTEXT        IDC_EDIT_unit6,39,120,66,14,ES_AUTOHSCROLL
+    LTEXT           "单位比例",IDC_STATIC,0,122,33,8
+    CONTROL         "绝对位置",IDC_RADIO_absPosition7,"Button",BS_AUTORADIOBUTTON | WS_GROUP,288,90,48,10
+    CONTROL         "相对位置",IDC_RADIO_relPosition7,"Button",BS_AUTORADIOBUTTON,342,90,48,10
+    COMBOBOX        IDC_COMBO_unit7,312,108,66,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "单位",IDC_STATIC,288,108,17,8
+    EDITTEXT        IDC_EDIT_unit7,312,120,66,14,ES_AUTOHSCROLL
+    LTEXT           "单位比例",IDC_STATIC,273,122,33,8
+    CONTROL         "绝对位置",IDC_RADIO_absPosition8,"Button",BS_AUTORADIOBUTTON | WS_GROUP,15,266,48,10
+    CONTROL         "相对位置",IDC_RADIO_relPosition8,"Button",BS_AUTORADIOBUTTON,69,266,48,10
+    COMBOBOX        IDC_COMBO_unit8,39,284,66,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "单位",IDC_STATIC,15,284,17,8
+    EDITTEXT        IDC_EDIT_unit8,39,296,66,14,ES_AUTOHSCROLL
+    LTEXT           "单位比例",IDC_STATIC,0,298,33,8
+    CONTROL         "绝对位置",IDC_RADIO_absPosition9,"Button",BS_AUTORADIOBUTTON | WS_GROUP,283,267,48,10
+    CONTROL         "相对位置",IDC_RADIO_relPosition9,"Button",BS_AUTORADIOBUTTON,337,267,48,10
+    COMBOBOX        IDC_COMBO_unit9,307,285,66,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "单位",IDC_STATIC,283,285,17,8
+    EDITTEXT        IDC_EDIT_unit9,307,296,66,14,ES_AUTOHSCROLL
+    LTEXT           "单位比例",IDC_STATIC,268,299,33,8
+    PUSHBUTTON      "",IDC_BUTTON_save6,0,0,30,24
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,0,25,671,1
+    PUSHBUTTON      "",IDC_BUTTON_default6,36,0,30,24
+END
+
+IDD_DIALOG_SETTING DIALOGEX 0, 0, 415, 267
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "  "
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "",IDC_BUTTON_autosave,7,0,26,20
+    PUSHBUTTON      "",IDC_BUTTON_autodefault,43,0,26,20
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,1,22,413,1
+    LTEXT           "步进误差：",IDC_STATIC,22,31,41,8
+    EDITTEXT        IDC_EDIT_stepserror,62,29,74,15,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_stepsError,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,135,29,12,14
+    LTEXT           "力传感器阈值：",IDC_STATIC,156,33,56,8
+    EDITTEXT        IDC_EDIT_sensorError,214,30,71,14,WS_GROUP
+    CONTROL         "",IDC_SPIN_sensorError,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,285,30,11,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,0,48,414,2
+    CONTROL         "",IDC_TAB_AUTO,"SysTabControl32",0x0,0,54,414,210
+    COMBOBOX        IDC_COMBO_WORKNUM,338,30,72,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "工位：",IDC_STATIC,314,32,24,8
+END
+
+IDD_DIALOG_AUTOINIT DIALOGEX 0, 0, 410, 170
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,0,10,187,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,222,12,187,1
+    LTEXT           "模板识别参数设置",IDC_STATIC,178,6,68,8
+    EDITTEXT        IDC_EDIT_angleErrorX,37,17,59,14,ES_AUTOHSCROLL
+    LTEXT           "X补偿量：",IDC_STATIC,0,20,37,8
+    EDITTEXT        IDC_EDIT_angleErrorY,145,17,59,14,ES_AUTOHSCROLL
+    LTEXT           "Y补偿量：",IDC_STATIC,108,20,37,8
+    EDITTEXT        IDC_EDIT_Xratio,37,36,59,14,ES_AUTOHSCROLL
+    LTEXT           "X比例：",IDC_STATIC,7,38,29,8
+    EDITTEXT        IDC_EDIT_Yratio,144,36,59,14,ES_AUTOHSCROLL
+    LTEXT           "Y比例：",IDC_STATIC,114,38,29,8
+    EDITTEXT        IDC_EDIT_Aratio,246,36,59,14,ES_AUTOHSCROLL
+    LTEXT           "A比例：",IDC_STATIC,216,38,30,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,0,60,187,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,222,62,187,1
+    LTEXT           "金丝球焊点标定",IDC_STATIC,175,55,57,8
+    EDITTEXT        IDC_EDIT_XPos,137,74,59,14,ES_AUTOHSCROLL
+    LTEXT           "X值：",IDC_STATIC,156,65,21,8
+    EDITTEXT        IDC_EDIT_YPos,206,74,59,14,ES_AUTOHSCROLL
+    LTEXT           "Y值：",IDC_STATIC,225,65,21,8
+    EDITTEXT        IDC_EDIT_APos,272,74,59,14,ES_AUTOHSCROLL
+    LTEXT           "A值：",IDC_STATIC,290,65,22,8
+    EDITTEXT        IDC_EDIT_XPos2,137,92,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YPos2,205,92,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_APos2,271,92,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XPos3,137,110,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YPos3,205,110,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_APos3,271,110,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XPos4,137,129,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YPos4,205,129,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_APos4,271,129,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XPos5,137,146,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YPos5,205,146,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_APos5,271,146,59,14,ES_AUTOHSCROLL
+    LTEXT           "金丝球焊点在图像中的位置标定",IDC_STATIC,14,78,113,8
+    LTEXT           "金膜焊点处于焊头正下方标定1",IDC_STATIC,18,95,109,8
+    LTEXT           "金膜焊点处于焊头正下方标定2",IDC_STATIC,18,113,109,8
+    LTEXT           "金膜焊点处于焊头正下方标定3",IDC_STATIC,18,132,109,8
+    LTEXT           "金膜焊点处于焊头正下方标定4",IDC_STATIC,18,150,109,8
+END
+
+IDD_DIALOG_AUTO DIALOGEX 0, 0, 446, 314
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,0,198,444,1
+    LTEXT           "模板识别参数设置：",IDC_STATIC,0,202,73,8
+    COMBOBOX        IDC_COMBO_ROUND,22,230,66,62,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "轮数",IDC_STATIC,0,231,17,8
+    EDITTEXT        IDC_EDIT_maxMatchNum,178,244,57,14,ES_AUTOHSCROLL
+    LTEXT           "最大匹配目标数",IDC_STATIC,121,247,57,8
+    EDITTEXT        IDC_EDIT_MatchNum,293,244,57,14,ES_AUTOHSCROLL
+    LTEXT           "匹配目标数",IDC_STATIC,248,247,41,8
+    COMBOBOX        IDC_COMBO_searchSpeedMode,51,245,66,62,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "匹配搜索速度",IDC_STATIC,0,247,49,8
+    LTEXT           "模板文件路径",IDC_STATIC,0,266,49,8
+    EDITTEXT        IDC_EDIT_MODELPATH,54,262,180,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "打开",IDC_BUTTON_MODELPATH,234,262,50,14
+    LTEXT           "处理平滑度",IDC_STATIC,0,282,41,8
+    EDITTEXT        IDC_EDIT_Smoothness,45,279,57,14,ES_AUTOHSCROLL
+    LTEXT           "滤波运算迭代次数",IDC_STATIC,124,282,65,8
+    EDITTEXT        IDC_EDIT_iterationNum,190,279,57,14,ES_AUTOHSCROLL
+    LTEXT           "兴趣区X",IDC_STATIC,0,298,29,8
+    EDITTEXT        IDC_EDIT_ROIX,30,294,57,14,ES_AUTOHSCROLL
+    LTEXT           "兴趣区Y",IDC_STATIC,102,298,29,8
+    EDITTEXT        IDC_EDIT_ROIY,132,294,57,14,ES_AUTOHSCROLL
+    LTEXT           "兴趣区W",IDC_STATIC,204,298,32,8
+    EDITTEXT        IDC_EDIT_ROIW,234,294,57,14,ES_AUTOHSCROLL
+    LTEXT           "兴趣区H",IDC_STATIC,306,298,30,8
+    EDITTEXT        IDC_EDIT_ROIH,336,294,57,14,ES_AUTOHSCROLL
+    LTEXT           "X补偿量",IDC_STATIC,1,216,29,8
+    EDITTEXT        IDC_EDIT_angleErrorX,32,213,57,14,ES_AUTOHSCROLL
+    LTEXT           "X比例",IDC_STATIC,183,216,24,8
+    EDITTEXT        IDC_EDIT_Xratio,205,213,57,14,ES_AUTOHSCROLL
+    LTEXT           "Y比例",IDC_STATIC,266,216,24,8
+    EDITTEXT        IDC_EDIT_Yratio,288,213,57,14,ES_AUTOHSCROLL
+    LTEXT           "A比例",IDC_STATIC,348,216,24,8
+    EDITTEXT        IDC_EDIT_Aratio,370,213,57,14,ES_AUTOHSCROLL
+    LTEXT           "Y补偿量",IDC_STATIC,92,216,29,8
+    EDITTEXT        IDC_EDIT_angleErrorY,124,213,57,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_PROCESSNUM,152,229,66,62,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "模板识别次数",IDC_STATIC,98,231,49,8
+    LTEXT           "特征点位置",IDC_STATIC,264,282,41,8
+    EDITTEXT        IDC_EDIT_modelDistance,306,279,57,14,ES_AUTOHSCROLL
+END
+
+IDD_IOControl DIALOGEX 0, 0, 715, 304
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IO调试"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "基体零件夹持",IDC_BUTTON1,28,22,57,32
+    PUSHBUTTON      "基体零件松开",IDC_BUTTON2,95,22,57,32
+    GROUPBOX        "工位IO",IDC_STATIC,17,12,148,285
+    PUSHBUTTON      "针形气缸定位",IDC_BUTTON3,28,61,57,32
+    PUSHBUTTON      "远接挡片吸附",IDC_BUTTON4,95,61,57,32
+    PUSHBUTTON      "轴类零件夹持",IDC_BUTTON5,27,100,57,32
+    PUSHBUTTON      "轴类零件松开",IDC_BUTTON6,94,100,57,32
+    PUSHBUTTON      "上盖板吸附",IDC_BUTTON7,26,140,57,32
+    PUSHBUTTON      "钢珠吸附",IDC_BUTTON8,93,140,57,32
+    PUSHBUTTON      "基体翻转",IDC_BUTTON9,26,179,57,32
+    PUSHBUTTON      "基体翻转复位",IDC_BUTTON10,93,179,57,32
+    PUSHBUTTON      "基体&弹簧夹持",IDC_BUTTON11,180,22,57,32
+    PUSHBUTTON      "基体弹簧释放",IDC_BUTTON12,247,22,57,32
+    GROUPBOX        "机器人IO",IDC_STATIC,169,11,148,242
+    PUSHBUTTON      "轴类夹具夹持",IDC_BUTTON13,180,61,57,32
+    PUSHBUTTON      "轴类夹具释放",IDC_BUTTON14,247,61,57,32
+    PUSHBUTTON      "远解挡片吸附",IDC_BUTTON15,179,101,57,32
+    PUSHBUTTON      "钢珠吸附",IDC_BUTTON16,246,101,57,32
+    PUSHBUTTON      "离心保险左",IDC_BUTTON17,178,139,57,32
+    PUSHBUTTON      "离心保险右",IDC_BUTTON18,245,139,57,32
+    PUSHBUTTON      "上盖板吸附",IDC_BUTTON19,178,179,57,32
+    PUSHBUTTON      "清零",IDC_BUTTON20,245,179,57,32
+    PUSHBUTTON      "定位气缸伸出",IDC_BUTTON21,26,218,57,32
+    PUSHBUTTON      "定位气缸缩回",IDC_BUTTON22,93,218,57,32
+    PUSHBUTTON      "IO6清零",IDC_BUTTON23,178,218,57,32
+    PUSHBUTTON      "IO5清零",IDC_BUTTON24,245,218,57,32
+    GROUPBOX        "螺丝刀IO",IDC_STATIC,323,11,79,243
+    PUSHBUTTON      "螺丝刀1转",IDC_BUTTON25,335,24,57,32
+    PUSHBUTTON      "螺丝刀1停",IDC_BUTTON26,335,63,57,32
+    PUSHBUTTON      "螺丝刀1低速",IDC_BUTTON27,333,103,57,32
+    PUSHBUTTON      "螺丝刀2转",IDC_BUTTON28,333,141,57,32
+    PUSHBUTTON      "螺丝刀2停",IDC_BUTTON29,333,181,57,32
+    PUSHBUTTON      "螺丝刀2低速",IDC_BUTTON30,333,219,57,32
+    PUSHBUTTON      "清零",IDC_BUTTON31,25,256,57,31
+    PUSHBUTTON      "IO2清零",IDC_BUTTON32,93,256,57,31
+    PUSHBUTTON      "IO3清零",IDC_BUTTON33,178,256,57,31
+    PUSHBUTTON      "IO4清零",IDC_BUTTON34,246,256,57,31
+    EDITTEXT        IDC_EDIT7,668,101,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,517,28,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "send",IDC_BUTTON35,610,30,50,14
+    EDITTEXT        IDC_EDIT9,563,80,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,668,120,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "send",IDC_BUTTON36,612,54,50,14
+    EDITTEXT        IDC_EDIT11,668,81,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,668,138,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "iquiry",IDC_BUTTON37,611,80,50,14
+    CONTROL         "",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,404,27,100,15
+    CONTROL         "",IDC_IPADDRESS2,"SysIPAddress32",WS_TABSTOP,405,55,100,15
+    CONTROL         "",IDC_IPADDRESS3,"SysIPAddress32",WS_TABSTOP,405,80,100,15
+    EDITTEXT        IDC_EDIT13,519,54,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,572,56,30,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,510,81,48,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT14,668,159,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT15,668,180,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT16,472,161,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_IPADDRESS4,"SysIPAddress32",WS_TABSTOP,482,123,100,15
+    LTEXT           "本地IP：",IDC_STATIC,439,127,29,8
+END
+
+IDD_DIALOG_Login DIALOGEX 0, 0, 837, 597
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登录"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         IDB_BITMAP1,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE,7,7,823,583
+    CTEXT           "账号：",IDC_STATIC3,562,205,27,13,SS_CENTERIMAGE
+    CTEXT           "密码：",IDC_STATIC4,561,228,27,13,SS_CENTERIMAGE
+    CONTROL         "记住账号",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,591,245,48,16
+    EDITTEXT        IDC_EDIT2,591,227,89,15,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT1,591,203,89,16,ES_AUTOHSCROLL
+    CONTROL         "记住密码",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,639,245,52,16
+    CTEXT           "找回密码",IDC_STATIC6,693,245,78,16,SS_NOTIFY | SS_CENTERIMAGE
+    CONTROL         "BUTTON1",IDC_BUTTON1,"Button",BS_OWNERDRAW | WS_TABSTOP,681,203,89,32
+    EDITTEXT        IDC_TIME,734,12,90,12,ES_CENTER | ES_AUTOHSCROLL | NOT WS_BORDER
+END
+
+IDD_DIALOG_CreateProcess DIALOGEX 0, 0, 159, 99
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTERMOUSE | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新建流程"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,54,65,39,14
+    PUSHBUTTON      "取消",IDCANCEL,94,65,39,14
+    LTEXT           "名    称:\n\n创建人:\n\n备    注:",IDC_STATIC,19,14,53,47
+    EDITTEXT        IDC_EDIT1,61,12,72,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,61,28,72,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,61,44,72,13,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_EditProcess DIALOGEX 0, 0, 513, 453
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "编辑流程"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,402,432,50,14
+    PUSHBUTTON      "取消",IDCANCEL,456,432,50,14
+    LTEXT           "当前编辑：",IDC_STATIC,7,14,42,11
+    LTEXT           "",IDC_STATIC1,47,14,105,11
+    PUSHBUTTON      "设     置",IDC_BUTTON1,7,31,61,14
+    PUSHBUTTON      "插入模板",IDC_BUTTON2,7,54,61,14
+    PUSHBUTTON      "检    查",IDC_BUTTON3,7,77,61,14
+    PUSHBUTTON      "保     存",IDC_BUTTON4,7,100,61,14
+    PUSHBUTTON      "导    出",IDC_BUTTON5,7,123,61,14
+    PUSHBUTTON      "设为当前流程",IDC_BUTTON6,7,146,61,14
+    PUSHBUTTON      "删     除",IDC_BUTTON7,7,169,61,14
+    LTEXT           "插入指令                 序号                        类型                       备注                       操作",IDC_STATIC,126,14,380,13
+    CONTROL         "",IDC_MFCVSLISTBOX1,"MfcVSListBox",WS_TABSTOP,99,30,393,380
+END
+
+IDD_DIALOG_Editor DIALOGEX 0, 0, 843, 436
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自动流程编辑器"
+FONT 7, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "打开",IDC_BUTTON1,20,16,42,12
+    PUSHBUTTON      "清空",IDC_BUTTON2,118,16,42,12
+    PUSHBUTTON      "保存",IDC_BUTTON3,69,16,42,12
+    PUSHBUTTON      "统计",IDC_BUTTON4,167,16,42,12
+    PUSHBUTTON      "查找",IDC_BUTTON5,432,16,42,12
+    EDITTEXT        IDC_EDIT4,339,16,91,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "退出",IDC_BUTTON6,705,408,42,12
+    PUSHBUTTON      "保存",IDC_BUTTON7,659,408,42,12
+    PUSHBUTTON      "上移",IDC_BUTTON8,475,35,31,12
+    EDITTEXT        IDC_EDIT5,63,34,284,13,ES_AUTOHSCROLL
+    LTEXT           "流程名称：",IDC_STATIC,22,36,41,11
+    CONTROL         "",IDC_LIST4,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,52,829,351,WS_EX_LEFTSCROLLBAR
+    EDITTEXT        IDC_EDIT6,763,36,53,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "下移",IDC_BUTTON9,515,35,31,12
+    PUSHBUTTON      "插入空行",IDC_BUTTON10,355,35,31,12
+    PUSHBUTTON      "删除",IDC_BUTTON11,435,35,31,12
+    PUSHBUTTON      "检查",IDC_BUTTON12,216,16,42,12
+    PUSHBUTTON      "插入文件",IDC_BUTTON13,395,35,31,12
+END
+
+IDD_DIALOG_Path DIALOGEX 0, 0, 265, 100
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "插入路径"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,81,76,50,14
+    PUSHBUTTON      "取消",IDCANCEL,135,76,50,14
+    EDITTEXT        IDC_EDIT1,16,35,179,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "选择文件",IDC_BUTTON1,197,35,56,12
+END
+
+IDD_TEST3_DIALOG DIALOGEX 0, 0, 360, 401
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Robot"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "X(mm)",IDC_X_STATIC,126,43,24,8
+    EDITTEXT        IDC_ActSpaPos1,168,40,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Y(mm)",IDC_Y_STATIC,126,71,24,8
+    EDITTEXT        IDC_ActSpaPos2,168,68,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Z(mm)",IDC_Z_STATIC,126,99,24,8
+    EDITTEXT        IDC_ActSpaPos3,168,96,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "R(°)",IDC_A_STATIC,126,127,31,8
+    EDITTEXT        IDC_ActSpaPos4,168,124,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "状态显示",IDC_STATIC,9,7,28,8
+    LTEXT           "关节1(°)",IDC_Theta1,8,43,32,8
+    EDITTEXT        IDC_ActMotPos1,55,43,32,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "关节2(°)",IDC_Theta2,8,71,30,8
+    EDITTEXT        IDC_ActMotPos2,55,71,32,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "关节3(mm)",IDC_Theta3,8,99,36,8
+    EDITTEXT        IDC_ActMotPos3,55,99,32,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_ActMotPos4,55,127,32,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "TCP发送",IDC_TCPSEND,199,155,37,14
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,7,179,352,215
+    GROUPBOX        "关节角度",IDC_STATIC,7,25,99,123
+    GROUPBOX        "末端位姿",IDC_STATIC,118,24,99,124
+    CONTROL         "使能",IDC_CHECK_POWER,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,7,156,34,13
+    CONTROL         "TCP连接",IDC_RADIO_TCPLINK,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,50,156,34,13
+    CONTROL         "TCP断开",IDC_RADIO_TCPDISC,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,96,156,34,13
+    EDITTEXT        IDC_Mode,171,156,15,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "关节4(°)",IDC_Theta4,8,127,30,8
+    LTEXT           "模式",IDC_Theta9,146,158,15,8
+    LTEXT           "当前状态",IDC_Theta10,236,66,33,8
+    EDITTEXT        IDC_ActualStatus,274,64,40,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_TARPOS DIALOGEX 0, 0, 352, 191
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Y轴(mm)",IDC_Tap_Y,54,67,39,9
+    LTEXT           "X轴(mm)",IDC_Tap_X,54,42,39,9
+    LTEXT           "Z轴(mm)",IDC_Tap_Z,54,92,39,9
+    GROUPBOX        "模式选择",IDC_STATIC,185,28,62,130
+    GROUPBOX        "目标位置",IDC_STATIC,40,28,122,131
+    EDITTEXT        IDC_Tap_edit1,99,40,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Tap_edit2,99,65,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Tap_edit3,99,90,50,14,ES_AUTOHSCROLL
+    CONTROL         "MoveJ",IDC_RADIO_MOVEJ,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,198,40,40,14
+    CONTROL         "MoveL",IDC_RADIO_MOVEL,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,198,89,40,14
+    CONTROL         "MoveC",IDC_RADIO_MOVEC,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,198,138,40,14
+    LTEXT           "R轴(°)",IDC_Tap_R,54,117,39,9
+    EDITTEXT        IDC_Tap_edit4,99,115,50,14,ES_AUTOHSCROLL
+    LTEXT           "最大速度(mm)",IDC_Tap_V,46,142,60,9
+    EDITTEXT        IDC_Tap_edit5,99,140,50,14,ES_AUTOHSCROLL
+END
+
+IDD_JOIPOS DIALOGEX 0, 0, 357, 191
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "关节1(°)",IDC_Theta1,33,25,39,9
+    LTEXT           "关节3(mm)",IDC_Theta3,33,83,39,9
+    GROUPBOX        "目标位置",IDC_STATIC,22,7,154,177
+    EDITTEXT        1046,196,23,50,14,ES_AUTOHSCROLL
+    EDITTEXT        1047,196,51,50,14,ES_AUTOHSCROLL
+    EDITTEXT        1048,196,80,50,14,ES_AUTOHSCROLL
+    LTEXT           "关节4(°)",IDC_Theta4,33,112,39,9
+    EDITTEXT        1049,196,109,50,14,ES_AUTOHSCROLL
+    LTEXT           "关节2(°)",IDC_Theta2,33,54,39,9
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,77,23,87,15
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,77,50,87,15
+    CONTROL         "",IDC_SLIDER3,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,77,79,87,15
+    CONTROL         "",IDC_SLIDER4,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,77,108,87,15
+    LTEXT           "-150",IDC_STATIC,70,12,16,8
+    LTEXT           "-120",IDC_STATIC,70,40,16,8
+    LTEXT           "-40",IDC_STATIC,70,69,12,8
+    LTEXT           "-180",IDC_STATIC,70,99,16,8
+    LTEXT           "150",IDC_STATIC,161,12,13,8
+    LTEXT           "120",IDC_STATIC,161,40,13,8
+    LTEXT           "40",IDC_STATIC,161,69,9,8
+    LTEXT           "180",IDC_STATIC,161,99,13,8
+    GROUPBOX        "目标关节位置",IDC_STATIC,183,7,86,177
+END
+
+IDD_HANCON DIALOGEX 0, 0, 459, 251
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST1,241,25,136,95,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "添加中间点",IDC_BUTTON_ADDPOINT,177,35,50,14
+    PUSHBUTTON      "删除中间点",IDC_BUTTON_DELETEPOINT,177,67,50,14
+    PUSHBUTTON      "清空中间点",IDC_BUTTON_CLEARPOINT,177,99,50,14
+    CONTROL         "Axis1",IDC_CHECK_AXIS1,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,57,37,37,14
+    CONTROL         "Axis2",IDC_CHECK_AXIS2,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,19,60,37,14
+    CONTROL         "Axis3",IDC_CHECK_AXIS3,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,82,60,37,14
+    CONTROL         "Axis4",IDC_CHECK_AXIS4,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,57,83,37,14
+    CONTROL         "FORWARD",IDC_CHECK_FORWARD,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,57,118,51,10
+    CONTROL         "LFET",IDC_CHECK_LEFT,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,15,138,51,10
+    CONTROL         "RIGHT",IDC_CHECK_RIGHT,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,103,138,51,10
+    CONTROL         "BACKWARD",IDC_CHECK_BACKWARD,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,56,158,51,10
+    CONTROL         "UP",IDC_CHECK_UP,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,57,176,51,10
+    CONTROL         "DOWN",IDC_CHECK_DOWN,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,57,194,51,10
+    EDITTEXT        IDC_EDIT_OUT_wXpos,229,150,51,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "wXpos",IDC_STATIC,193,153,22,8
+    LTEXT           "wZpos",IDC_STATIC,193,175,22,8
+    EDITTEXT        IDC_EDIT_OUT_wZpos,229,172,51,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "wYpos",IDC_STATIC,293,153,22,8
+    EDITTEXT        IDC_EDIT_OUT_wYpos,329,150,51,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "wRpos",IDC_STATIC,293,175,22,8
+    EDITTEXT        IDC_EDIT_OUT_wRpos,329,172,51,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Positive",IDC_CHECK_POSITIVE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,131,46,37,14
+    CONTROL         "Negative",IDC_CHECK_NEGATIVE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,130,84,37,14
+END
+
+IDD_JOIVEL DIALOGEX 0, 0, 393, 193
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "关节2(°/s)",IDC_Theta2,8,59,39,9
+    LTEXT           "关节1(°/s)",IDC_Theta1,8,31,39,9
+    LTEXT           "关节3(mm/s)",IDC_Theta3,8,87,47,9
+    LTEXT           "关节4(°/s)",IDC_Theta4,8,115,39,9
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,62,29,87,15
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,62,55,87,15
+    CONTROL         "",IDC_SLIDER3,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,62,83,87,15
+    CONTROL         "",IDC_SLIDER4,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,62,112,87,15
+    EDITTEXT        1046,181,29,50,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        1047,181,56,50,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        1048,181,84,50,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        1049,181,112,50,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "当前速度",IDC_STATIC,168,14,80,115
+    LTEXT           "-30",IDC_STATIC,55,18,12,8
+    LTEXT           "-30",IDC_STATIC,55,45,12,8
+    LTEXT           "-30",IDC_STATIC,55,72,12,8
+    LTEXT           "-30",IDC_STATIC,55,99,12,8
+    LTEXT           "30",IDC_STATIC,146,18,9,8
+    LTEXT           "30",IDC_STATIC,146,45,9,8
+    LTEXT           "30",IDC_STATIC,146,72,9,8
+    LTEXT           "30",IDC_STATIC,146,99,9,8
+END
+
+IDD_TARVEL DIALOGEX 0, 0, 369, 205
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Y轴(mm/s)",IDC_Axis_Y,17,71,39,9
+    LTEXT           "X轴(mm/s)",IDC_Axis_X,17,42,39,9
+    LTEXT           "Z轴(mm/s)",IDC_Axis_Z,17,100,39,9
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,71,39,87,15
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,71,68,87,15
+    CONTROL         "",IDC_SLIDER3,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,71,97,87,15
+    EDITTEXT        1046,191,39,50,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        1047,191,70,50,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        1048,191,101,50,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "当前速度",IDC_STATIC,177,25,81,119
+    LTEXT           "-20",IDC_STATIC,62,28,12,8
+    LTEXT           "-20",IDC_STATIC,62,58,12,8
+    LTEXT           "-40",IDC_STATIC,62,88,12,8
+    LTEXT           "20",IDC_STATIC,155,28,9,8
+    LTEXT           "20",IDC_STATIC,155,58,9,8
+    LTEXT           "40",IDC_STATIC,155,88,9,8
+    LTEXT           "R轴(°/s)",IDC_Axis_A,17,129,39,9
+    CONTROL         "",IDC_SLIDER4,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,71,126,87,15
+    EDITTEXT        1049,191,127,50,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "-30",IDC_STATIC,62,118,12,8
+    LTEXT           "30",IDC_STATIC,155,118,9,8
+END
+
+IDD_AUTCON DIALOGEX 0, 0, 309, 177
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG_Examination DIALOGEX 0, 0, 309, 362
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "检查结果"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,197,341,50,14
+    PUSHBUTTON      "取消",IDCANCEL,251,341,50,14
+    LISTBOX         IDC_LIST_LOG,7,7,295,333,LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK2,143,341,50,14
+END
+
+IDD_DIALOG_FlowChart DIALOGEX 0, 0, 765, 591
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "流程图"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,198,570,50,14
+    PUSHBUTTON      "取消",IDCANCEL,708,570,50,14
+    CONTROL         "",IDC_STATIC1001,"Static",SS_BITMAP,25,12,15,13
+    CTEXT           "",IDC_STATIC_1001,14,3,27,9,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC2001,"Static",SS_BITMAP,25,66,15,13
+    CTEXT           "",IDC_STATIC_2001,14,84,31,9,SS_CENTERIMAGE
+    DEFPUSHBUTTON   "导出",IDOK2,513,570,50,14
+    CONTROL         "",IDC_STATIC1002,"Static",SS_BITMAP,58,12,15,13
+    CTEXT           "",IDC_STATIC_1002,53,3,27,9
+    CONTROL         "",IDC_STATIC2002,"Static",SS_BITMAP,58,66,15,13
+    CTEXT           "",IDC_STATIC_2002,48,84,31,9
+    CONTROL         "",IDC_STATIC1003,"Static",SS_BITMAP,91,12,15,13
+    CTEXT           "",IDC_STATIC_1003,86,3,27,9
+    CONTROL         "",IDC_STATIC2003,"Static",SS_BITMAP,93,66,15,13
+    CTEXT           "",IDC_STATIC_2003,81,84,31,9
+    CONTROL         "",IDC_STATIC1004,"Static",SS_BITMAP,124,12,15,13
+    CTEXT           "",IDC_STATIC_1004,118,3,27,9
+    CONTROL         "",IDC_STATIC2004,"Static",SS_BITMAP,126,66,15,13
+    CTEXT           "",IDC_STATIC_2004,115,84,31,9
+    CONTROL         "",IDC_STATIC1005,"Static",SS_BITMAP,157,12,15,13
+    CTEXT           "",IDC_STATIC_1005,150,3,27,9
+    CONTROL         "",IDC_STATIC2005,"Static",SS_BITMAP,158,66,15,13
+    CTEXT           "",IDC_STATIC_2005,148,84,31,9
+    CONTROL         "",IDC_STATIC1006,"Static",SS_BITMAP,190,12,15,13
+    CTEXT           "",IDC_STATIC_1006,184,3,27,9
+    CONTROL         "",IDC_STATIC2006,"Static",SS_BITMAP,191,66,15,13
+    CTEXT           "",IDC_STATIC_2006,181,84,31,9
+    CONTROL         "",IDC_STATIC1007,"Static",SS_BITMAP,223,12,15,13
+    CTEXT           "",IDC_STATIC_1007,219,3,27,9
+    CONTROL         "",IDC_STATIC2007,"Static",SS_BITMAP,224,66,15,13
+    CTEXT           "",IDC_STATIC_2007,215,84,31,9
+    CONTROL         "",IDC_STATIC1008,"Static",SS_BITMAP,260,12,15,13
+    CTEXT           "",IDC_STATIC_1009,286,3,27,9
+    CONTROL         "",IDC_STATIC2008,"Static",SS_BITMAP,260,66,15,13
+    CTEXT           "",IDC_STATIC_2009,282,84,31,9
+    CONTROL         "",IDC_STATIC1009,"Static",SS_BITMAP,292,12,15,13
+    CTEXT           "",IDC_STATIC_1008,255,3,27,9
+    CONTROL         "",IDC_STATIC2009,"Static",SS_BITMAP,292,66,15,13
+    CTEXT           "",IDC_STATIC_2008,251,84,31,9
+    CONTROL         "",IDC_STATIC1010,"Static",SS_BITMAP,325,12,15,13
+    CTEXT           "",IDC_STATIC_1010,319,3,27,9
+    CONTROL         "",IDC_STATIC2010,"Static",SS_BITMAP,325,66,15,13
+    CTEXT           "",IDC_STATIC_2010,315,84,31,9
+    CONTROL         "",IDC_STATIC1011,"Static",SS_BITMAP,358,12,15,13
+    CTEXT           "",IDC_STATIC_1011,352,3,27,9
+    CONTROL         "",IDC_STATIC2011,"Static",SS_BITMAP,358,66,15,13
+    CTEXT           "",IDC_STATIC_2011,348,84,31,9
+    CONTROL         "",IDC_STATIC2022,"Static",SS_BITMAP,722,66,15,13
+    CONTROL         "",IDC_STATIC1022,"Static",SS_BITMAP,722,12,15,13
+    CTEXT           "",IDC_STATIC_1022,717,3,27,9
+    CONTROL         "",IDC_STATIC2021,"Static",SS_BITMAP,693,66,15,13
+    CTEXT           "",IDC_STATIC_2021,685,84,31,9
+    CONTROL         "",IDC_STATIC1021,"Static",SS_BITMAP,693,12,15,13
+    CTEXT           "",IDC_STATIC_1021,687,3,27,9
+    CONTROL         "",IDC_STATIC2020,"Static",SS_BITMAP,661,66,15,13
+    CTEXT           "",IDC_STATIC_2020,652,84,31,9
+    CONTROL         "",IDC_STATIC1020,"Static",SS_BITMAP,661,12,15,13
+    CTEXT           "",IDC_STATIC_1020,654,3,27,9
+    CONTROL         "",IDC_STATIC2019,"Static",SS_BITMAP,628,66,15,13
+    CTEXT           "",IDC_STATIC_2019,619,84,31,9
+    CONTROL         "",IDC_STATIC1019,"Static",SS_BITMAP,628,12,15,13
+    CTEXT           "",IDC_STATIC_1019,620,3,27,9
+    CONTROL         "",IDC_STATIC2018,"Static",SS_BITMAP,592,66,15,13
+    CTEXT           "",IDC_STATIC_2018,583,84,31,9
+    CONTROL         "",IDC_STATIC1018,"Static",SS_BITMAP,592,12,15,13
+    CTEXT           "",IDC_STATIC_1018,585,3,27,9
+    CONTROL         "",IDC_STATIC2017,"Static",SS_BITMAP,559,66,15,13
+    CTEXT           "",IDC_STATIC_2017,550,84,31,9
+    CONTROL         "",IDC_STATIC1017,"Static",SS_BITMAP,559,12,15,13
+    CTEXT           "",IDC_STATIC_1017,552,3,31,9
+    CONTROL         "",IDC_STATIC2016,"Static",SS_BITMAP,525,66,15,13
+    CTEXT           "",IDC_STATIC_2016,516,84,31,9
+    CONTROL         "",IDC_STATIC1016,"Static",SS_BITMAP,525,12,15,13
+    CTEXT           "",IDC_STATIC_1016,519,3,27,9
+    CONTROL         "",IDC_STATIC2015,"Static",SS_BITMAP,491,66,15,13
+    CTEXT           "",IDC_STATIC_2014,447,84,31,9
+    CONTROL         "",IDC_STATIC1015,"Static",SS_BITMAP,491,12,15,13
+    CTEXT           "",IDC_STATIC_1014,452,3,27,9
+    CONTROL         "",IDC_STATIC2014,"Static",SS_BITMAP,458,66,15,13
+    CTEXT           "",IDC_STATIC_2015,481,84,31,9
+    CONTROL         "",IDC_STATIC1014,"Static",SS_BITMAP,458,12,15,13
+    CTEXT           "",IDC_STATIC_1015,485,3,27,9
+    CONTROL         "",IDC_STATIC2013,"Static",SS_BITMAP,424,66,15,13
+    CTEXT           "",IDC_STATIC_2013,413,84,31,9
+    CONTROL         "",IDC_STATIC1013,"Static",SS_BITMAP,424,12,15,13
+    CTEXT           "",IDC_STATIC_1013,418,3,27,9
+    CONTROL         "",IDC_STATIC2012,"Static",SS_BITMAP,391,66,15,13
+    CTEXT           "",IDC_STATIC_2012,381,84,31,9
+    CONTROL         "",IDC_STATIC1012,"Static",SS_BITMAP,391,12,15,13
+    CTEXT           "",IDC_STATIC_1012,384,3,27,9
+    CTEXT           "",IDC_STATIC_2022,713,84,31,9
+    CONTROL         "",IDC_STATICstart,"Static",SS_BITMAP,7,37,15,13
+    CONTROL         "",IDC_STATIC2044,"Static",SS_BITMAP,25,109,15,13
+    CTEXT           "",IDC_STATIC_2044,17,101,30,9,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC1044,"Static",SS_BITMAP,25,165,15,13
+    CTEXT           "",IDC_STATIC_1044,17,184,31,9,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC2043,"Static",SS_BITMAP,60,109,15,13
+    CTEXT           "",IDC_STATIC_2043,55,101,30,9
+    CONTROL         "",IDC_STATIC1043,"Static",SS_BITMAP,60,165,15,13
+    CTEXT           "",IDC_STATIC_1043,51,184,31,9
+    CONTROL         "",IDC_STATIC2042,"Static",SS_BITMAP,95,109,15,13
+    CTEXT           "",IDC_STATIC_2042,88,101,30,9
+    CONTROL         "",IDC_STATIC1042,"Static",SS_BITMAP,96,165,15,13
+    CTEXT           "",IDC_STATIC_1042,84,184,31,9
+    CONTROL         "",IDC_STATIC2041,"Static",SS_BITMAP,130,109,15,13
+    CTEXT           "",IDC_STATIC_2041,122,101,30,9
+    CONTROL         "",IDC_STATIC1041,"Static",SS_BITMAP,129,165,15,13
+    CTEXT           "",IDC_STATIC_1041,118,184,31,9
+    CONTROL         "",IDC_STATIC2040,"Static",SS_BITMAP,164,109,15,13
+    CTEXT           "",IDC_STATIC_2040,155,101,30,9
+    CONTROL         "",IDC_STATIC1040,"Static",SS_BITMAP,163,165,15,13
+    CTEXT           "",IDC_STATIC_1040,151,184,31,9
+    CONTROL         "",IDC_STATIC2039,"Static",SS_BITMAP,197,109,15,13
+    CTEXT           "",IDC_STATIC_2039,189,101,30,9
+    CONTROL         "",IDC_STATIC1039,"Static",SS_BITMAP,196,165,15,13
+    CTEXT           "",IDC_STATIC_1039,184,184,31,9
+    CONTROL         "",IDC_STATIC2038,"Static",SS_BITMAP,230,109,15,13
+    CTEXT           "",IDC_STATIC_2038,219,101,30,9
+    CONTROL         "",IDC_STATIC1038,"Static",SS_BITMAP,229,165,15,13
+    CTEXT           "",IDC_STATIC_1038,217,184,31,9
+    CONTROL         "",IDC_STATIC2037,"Static",SS_BITMAP,260,109,15,13
+    CTEXT           "",IDC_STATIC_2036,285,101,30,9
+    CONTROL         "",IDC_STATIC1037,"Static",SS_BITMAP,260,165,15,13
+    CTEXT           "",IDC_STATIC_1036,284,184,31,9
+    CONTROL         "",IDC_STATIC2036,"Static",SS_BITMAP,292,109,15,13
+    CTEXT           "",IDC_STATIC_2037,253,101,30,9
+    CONTROL         "",IDC_STATIC1036,"Static",SS_BITMAP,292,165,15,13
+    CTEXT           "",IDC_STATIC_1037,251,184,31,9
+    CONTROL         "",IDC_STATIC2035,"Static",SS_BITMAP,325,109,15,13
+    CTEXT           "",IDC_STATIC_2035,318,101,30,9
+    CONTROL         "",IDC_STATIC1035,"Static",SS_BITMAP,325,165,15,13
+    CTEXT           "",IDC_STATIC_1035,315,184,31,9
+    CONTROL         "",IDC_STATIC2034,"Static",SS_BITMAP,358,109,15,13
+    CTEXT           "",IDC_STATIC_2034,351,101,30,9
+    CONTROL         "",IDC_STATIC1034,"Static",SS_BITMAP,358,165,15,13
+    CTEXT           "",IDC_STATIC_1034,349,184,31,9
+    CONTROL         "",IDC_STATIC1023,"Static",SS_BITMAP,722,165,15,13
+    CONTROL         "",IDC_STATIC2023,"Static",SS_BITMAP,722,109,15,13
+    CTEXT           "",IDC_STATIC_2023,715,101,30,9
+    CONTROL         "",IDC_STATIC1024,"Static",SS_BITMAP,693,165,15,13
+    CTEXT           "",IDC_STATIC_1024,684,184,31,9
+    CONTROL         "",IDC_STATIC2024,"Static",SS_BITMAP,693,109,15,13
+    CTEXT           "",IDC_STATIC_2024,683,101,30,9
+    CONTROL         "",IDC_STATIC1025,"Static",SS_BITMAP,661,165,15,13
+    CTEXT           "",IDC_STATIC_1025,653,184,31,9
+    CONTROL         "",IDC_STATIC2025,"Static",SS_BITMAP,661,109,15,13
+    CTEXT           "",IDC_STATIC_2025,652,101,30,9
+    CONTROL         "",IDC_STATIC1026,"Static",SS_BITMAP,628,165,15,13
+    CTEXT           "",IDC_STATIC_1026,618,184,31,9
+    CONTROL         "",IDC_STATIC2026,"Static",SS_BITMAP,628,109,15,13
+    CTEXT           "",IDC_STATIC_2026,620,101,30,9
+    CONTROL         "",IDC_STATIC1027,"Static",SS_BITMAP,592,165,15,13
+    CTEXT           "",IDC_STATIC_1027,582,184,31,9
+    CONTROL         "",IDC_STATIC2027,"Static",SS_BITMAP,592,109,15,13
+    CTEXT           "",IDC_STATIC_2027,585,101,30,9
+    CONTROL         "",IDC_STATIC1028,"Static",SS_BITMAP,559,165,15,13
+    CTEXT           "",IDC_STATIC_1028,549,184,31,9
+    CONTROL         "",IDC_STATIC2028,"Static",SS_BITMAP,559,109,15,13
+    CTEXT           "",IDC_STATIC_2028,551,101,30,9
+    CONTROL         "",IDC_STATIC1029,"Static",SS_BITMAP,525,165,15,13
+    CTEXT           "",IDC_STATIC_1029,515,184,31,9
+    CONTROL         "",IDC_STATIC2029,"Static",SS_BITMAP,525,109,15,13
+    CTEXT           "",IDC_STATIC_2029,518,101,30,9
+    CONTROL         "",IDC_STATIC1030,"Static",SS_BITMAP,491,165,15,13
+    CTEXT           "",IDC_STATIC_1031,448,184,31,9
+    CONTROL         "",IDC_STATIC2030,"Static",SS_BITMAP,491,109,15,13
+    CTEXT           "",IDC_STATIC_2031,450,101,30,9
+    CONTROL         "",IDC_STATIC1031,"Static",SS_BITMAP,458,165,15,13
+    CTEXT           "",IDC_STATIC_1030,480,184,31,9
+    CONTROL         "",IDC_STATIC2031,"Static",SS_BITMAP,458,109,15,13
+    CTEXT           "",IDC_STATIC_2030,483,101,30,9
+    CONTROL         "",IDC_STATIC1032,"Static",SS_BITMAP,424,165,15,13
+    CTEXT           "",IDC_STATIC_1032,415,184,31,9
+    CONTROL         "",IDC_STATIC2032,"Static",SS_BITMAP,424,109,15,13
+    CTEXT           "",IDC_STATIC_2032,417,101,30,9
+    CONTROL         "",IDC_STATIC1033,"Static",SS_BITMAP,391,165,15,13
+    CTEXT           "",IDC_STATIC_1033,382,184,31,9
+    CONTROL         "",IDC_STATIC2033,"Static",SS_BITMAP,391,109,15,13
+    CTEXT           "",IDC_STATIC_2033,384,101,30,9
+    CTEXT           "",IDC_STATIC_1023,713,184,31,9
+END
+
+IDD_DIALOG_Robot DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,199,156,50,14
+    PUSHBUTTON      "取消",IDCANCEL,253,156,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "controlSerialNetPort.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "controlSerialNetPort.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_CONTROLSERIALNETPORT_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 706
+        BOTTOMMARGIN, 515
+    END
+
+    IDD_DIALOG_SERIAL1, DIALOG
+    BEGIN
+        RIGHTMARGIN, 537
+        VERTGUIDE, 42
+        VERTGUIDE, 80
+        VERTGUIDE, 115
+        VERTGUIDE, 152
+        VERTGUIDE, 178
+        VERTGUIDE, 186
+        VERTGUIDE, 233
+        VERTGUIDE, 257
+        VERTGUIDE, 278
+        VERTGUIDE, 333
+        VERTGUIDE, 431
+        VERTGUIDE, 466
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 339
+        HORZGUIDE, 37
+        HORZGUIDE, 69
+        HORZGUIDE, 86
+        HORZGUIDE, 99
+        HORZGUIDE, 101
+        HORZGUIDE, 102
+        HORZGUIDE, 128
+        HORZGUIDE, 161
+        HORZGUIDE, 179
+    END
+
+    IDD_DIALOG_SERIAL2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 676
+        VERTGUIDE, 42
+        VERTGUIDE, 80
+        VERTGUIDE, 115
+        VERTGUIDE, 152
+        VERTGUIDE, 178
+        VERTGUIDE, 186
+        VERTGUIDE, 233
+        VERTGUIDE, 257
+        VERTGUIDE, 278
+        VERTGUIDE, 333
+        VERTGUIDE, 431
+        VERTGUIDE, 466
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 188
+        HORZGUIDE, 37
+        HORZGUIDE, 69
+        HORZGUIDE, 75
+        HORZGUIDE, 86
+        HORZGUIDE, 99
+        HORZGUIDE, 101
+        HORZGUIDE, 102
+        HORZGUIDE, 128
+        HORZGUIDE, 161
+    END
+
+    IDD_DIALOG_SERIAL3, DIALOG
+    BEGIN
+        RIGHTMARGIN, 533
+        VERTGUIDE, 42
+        VERTGUIDE, 80
+        VERTGUIDE, 115
+        VERTGUIDE, 152
+        VERTGUIDE, 178
+        VERTGUIDE, 186
+        VERTGUIDE, 233
+        VERTGUIDE, 257
+        VERTGUIDE, 278
+        VERTGUIDE, 333
+        VERTGUIDE, 431
+        VERTGUIDE, 466
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 362
+        HORZGUIDE, 37
+        HORZGUIDE, 69
+        HORZGUIDE, 75
+        HORZGUIDE, 86
+        HORZGUIDE, 99
+        HORZGUIDE, 101
+        HORZGUIDE, 102
+        HORZGUIDE, 128
+        HORZGUIDE, 161
+        HORZGUIDE, 179
+    END
+
+    IDD_DIALOG_SERIAL4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 534
+        VERTGUIDE, 42
+        VERTGUIDE, 80
+        VERTGUIDE, 115
+        VERTGUIDE, 152
+        VERTGUIDE, 178
+        VERTGUIDE, 186
+        VERTGUIDE, 233
+        VERTGUIDE, 257
+        VERTGUIDE, 278
+        VERTGUIDE, 333
+        VERTGUIDE, 431
+        VERTGUIDE, 466
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 206
+        HORZGUIDE, 37
+        HORZGUIDE, 69
+        HORZGUIDE, 86
+        HORZGUIDE, 99
+        HORZGUIDE, 101
+        HORZGUIDE, 102
+        HORZGUIDE, 128
+        HORZGUIDE, 161
+        HORZGUIDE, 179
+    END
+
+    IDD_DIALOG_SERIAL5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 670
+        VERTGUIDE, 42
+        VERTGUIDE, 80
+        VERTGUIDE, 115
+        VERTGUIDE, 152
+        VERTGUIDE, 178
+        VERTGUIDE, 186
+        VERTGUIDE, 233
+        VERTGUIDE, 257
+        VERTGUIDE, 278
+        VERTGUIDE, 333
+        VERTGUIDE, 431
+        VERTGUIDE, 466
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 188
+        HORZGUIDE, 37
+        HORZGUIDE, 69
+        HORZGUIDE, 75
+        HORZGUIDE, 86
+        HORZGUIDE, 99
+        HORZGUIDE, 101
+        HORZGUIDE, 102
+        HORZGUIDE, 128
+        HORZGUIDE, 161
+    END
+
+    IDD_DIALOG_SERIAL6, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 533
+        VERTGUIDE, 42
+        VERTGUIDE, 80
+        VERTGUIDE, 115
+        VERTGUIDE, 152
+        VERTGUIDE, 178
+        VERTGUIDE, 186
+        VERTGUIDE, 233
+        VERTGUIDE, 257
+        VERTGUIDE, 278
+        VERTGUIDE, 333
+        VERTGUIDE, 431
+        VERTGUIDE, 466
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 368
+        HORZGUIDE, 37
+        HORZGUIDE, 69
+        HORZGUIDE, 75
+        HORZGUIDE, 86
+        HORZGUIDE, 99
+        HORZGUIDE, 101
+        HORZGUIDE, 102
+        HORZGUIDE, 128
+        HORZGUIDE, 161
+        HORZGUIDE, 179
+    END
+
+    IDD_DIALOG_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 408
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 260
+    END
+
+    IDD_DIALOG_AUTOINIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 409
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_DIALOG_AUTO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 439
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 307
+    END
+
+    IDD_IOControl, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 708
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 297
+    END
+
+    IDD_DIALOG_Login, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 830
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 590
+    END
+
+    IDD_DIALOG_CreateProcess, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 92
+    END
+
+    IDD_DIALOG_EditProcess, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 506
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 446
+    END
+
+    IDD_DIALOG_Editor, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 836
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 429
+    END
+
+    IDD_DIALOG_Path, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_TEST3_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 359
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 394
+        HORZGUIDE, 148
+    END
+
+    IDD_TARPOS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 345
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_JOIPOS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 350
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_HANCON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 452
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 244
+    END
+
+    IDD_JOIVEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 386
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_TARVEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 362
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 198
+    END
+
+    IDD_AUTCON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_DIALOG_Examination, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 355
+    END
+
+    IDD_DIALOG_FlowChart, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 758
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 584
+    END
+
+    IDD_DIALOG_Robot, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_SERIAL1 DLGINIT
+BEGIN
+    IDC_COMBO_MODE, 0x403, 9, 0
+0xbdb2, 0xf8bd, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE, 0x403, 9, 0
+0xc5cb, 0xfeb7, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE2, 0x403, 9, 0
+0xbdb2, 0xf8bd, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE2, 0x403, 9, 0
+0xc5cb, 0xfeb7, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_unit, 0x403, 5, 0
+0xf6c2, 0xe5b3, "\000" 
+    IDC_COMBO_unit, 0x403, 5, 0
+0xc1ba, 0xd7c3, "\000" 
+    IDC_COMBO_unit, 0x403, 3, 0
+0xc8b6, "\000" 
+    IDC_COMBO_unit2, 0x403, 5, 0
+0xf6c2, 0xe5b3, "\000" 
+    IDC_COMBO_unit2, 0x403, 5, 0
+0xc1ba, 0xd7c3, "\000" 
+    IDC_COMBO_unit2, 0x403, 3, 0
+0xc8b6, "\000" 
+    0
+END
+
+IDD_DIALOG_SERIAL2 DLGINIT
+BEGIN
+    IDC_COMBO_MODE, 0x403, 9, 0
+0xbdb2, 0xf8bd, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE, 0x403, 9, 0
+0xc5cb, 0xfeb7, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE2, 0x403, 9, 0
+0xbdb2, 0xf8bd, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE2, 0x403, 9, 0
+0xc5cb, 0xfeb7, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE3, 0x403, 9, 0
+0xf8be, 0xd4b6, 0xbbce, 0xc3d6, "\000" 
+    IDC_COMBO_MODE3, 0x403, 9, 0
+0xe0cf, 0xd4b6, 0xbbce, 0xc3d6, "\000" 
+    IDC_COMBO_unit3, 0x403, 5, 0
+0xf6c2, 0xe5b3, "\000" 
+    IDC_COMBO_unit3, 0x403, 5, 0
+0xc1ba, 0xd7c3, "\000" 
+    IDC_COMBO_unit3, 0x403, 3, 0
+0xc8b6, "\000" 
+    IDC_COMBO_unit4, 0x403, 5, 0
+0xf6c2, 0xe5b3, "\000" 
+    IDC_COMBO_unit4, 0x403, 5, 0
+0xc1ba, 0xd7c3, "\000" 
+    IDC_COMBO_unit4, 0x403, 3, 0
+0xc8b6, "\000" 
+    0
+END
+
+IDD_DIALOG_SERIAL3 DLGINIT
+BEGIN
+    IDC_COMBO_MODE, 0x403, 9, 0
+0xbdb2, 0xf8bd, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE, 0x403, 9, 0
+0xc5cb, 0xfeb7, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE2, 0x403, 9, 0
+0xbdb2, 0xf8bd, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE2, 0x403, 9, 0
+0xc5cb, 0xfeb7, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE3, 0x403, 9, 0
+0xbdb2, 0xf8bd, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE3, 0x403, 9, 0
+0xc5cb, 0xfeb7, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE4, 0x403, 9, 0
+0xbdb2, 0xf8bd, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE4, 0x403, 9, 0
+0xc5cb, 0xfeb7, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_unit6, 0x403, 5, 0
+0xf6c2, 0xe5b3, "\000" 
+    IDC_COMBO_unit6, 0x403, 5, 0
+0xc1ba, 0xd7c3, "\000" 
+    IDC_COMBO_unit6, 0x403, 3, 0
+0xc8b6, "\000" 
+    IDC_COMBO_unit7, 0x403, 5, 0
+0xf6c2, 0xe5b3, "\000" 
+    IDC_COMBO_unit7, 0x403, 5, 0
+0xc1ba, 0xd7c3, "\000" 
+    IDC_COMBO_unit7, 0x403, 3, 0
+0xc8b6, "\000" 
+    IDC_COMBO_unit8, 0x403, 5, 0
+0xf6c2, 0xe5b3, "\000" 
+    IDC_COMBO_unit8, 0x403, 5, 0
+0xc1ba, 0xd7c3, "\000" 
+    IDC_COMBO_unit8, 0x403, 3, 0
+0xc8b6, "\000" 
+    IDC_COMBO_unit9, 0x403, 5, 0
+0xf6c2, 0xe5b3, "\000" 
+    IDC_COMBO_unit9, 0x403, 5, 0
+0xc1ba, 0xd7c3, "\000" 
+    IDC_COMBO_unit9, 0x403, 3, 0
+0xc8b6, "\000" 
+    0
+END
+
+IDD_DIALOG_SERIAL4 DLGINIT
+BEGIN
+    IDC_COMBO_MODE, 0x403, 9, 0
+0xbdb2, 0xf8bd, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE, 0x403, 9, 0
+0xc5cb, 0xfeb7, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE2, 0x403, 9, 0
+0xbdb2, 0xf8bd, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE2, 0x403, 9, 0
+0xc5cb, 0xfeb7, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_unit, 0x403, 5, 0
+0xf6c2, 0xe5b3, "\000" 
+    IDC_COMBO_unit, 0x403, 5, 0
+0xc1ba, 0xd7c3, "\000" 
+    IDC_COMBO_unit, 0x403, 3, 0
+0xc8b6, "\000" 
+    IDC_COMBO_unit2, 0x403, 5, 0
+0xf6c2, 0xe5b3, "\000" 
+    IDC_COMBO_unit2, 0x403, 5, 0
+0xc1ba, 0xd7c3, "\000" 
+    IDC_COMBO_unit2, 0x403, 3, 0
+0xc8b6, "\000" 
+    0
+END
+
+IDD_DIALOG_SERIAL5 DLGINIT
+BEGIN
+    IDC_COMBO_MODE, 0x403, 9, 0
+0xbdb2, 0xf8bd, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE, 0x403, 9, 0
+0xc5cb, 0xfeb7, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE2, 0x403, 9, 0
+0xbdb2, 0xf8bd, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE2, 0x403, 9, 0
+0xc5cb, 0xfeb7, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE3, 0x403, 9, 0
+0xf8be, 0xd4b6, 0xbbce, 0xc3d6, "\000" 
+    IDC_COMBO_MODE3, 0x403, 9, 0
+0xe0cf, 0xd4b6, 0xbbce, 0xc3d6, "\000" 
+    IDC_COMBO_unit3, 0x403, 5, 0
+0xf6c2, 0xe5b3, "\000" 
+    IDC_COMBO_unit3, 0x403, 5, 0
+0xc1ba, 0xd7c3, "\000" 
+    IDC_COMBO_unit3, 0x403, 3, 0
+0xc8b6, "\000" 
+    IDC_COMBO_unit4, 0x403, 5, 0
+0xf6c2, 0xe5b3, "\000" 
+    IDC_COMBO_unit4, 0x403, 5, 0
+0xc1ba, 0xd7c3, "\000" 
+    IDC_COMBO_unit4, 0x403, 3, 0
+0xc8b6, "\000" 
+    0
+END
+
+IDD_DIALOG_SERIAL6 DLGINIT
+BEGIN
+    IDC_COMBO_MODE, 0x403, 9, 0
+0xbdb2, 0xf8bd, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE, 0x403, 9, 0
+0xc5cb, 0xfeb7, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE2, 0x403, 9, 0
+0xbdb2, 0xf8bd, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE2, 0x403, 9, 0
+0xc5cb, 0xfeb7, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE3, 0x403, 9, 0
+0xbdb2, 0xf8bd, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE3, 0x403, 9, 0
+0xc5cb, 0xfeb7, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE4, 0x403, 9, 0
+0xbdb2, 0xf8bd, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_MODE4, 0x403, 9, 0
+0xc5cb, 0xfeb7, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_unit6, 0x403, 5, 0
+0xf6c2, 0xe5b3, "\000" 
+    IDC_COMBO_unit6, 0x403, 5, 0
+0xc1ba, 0xd7c3, "\000" 
+    IDC_COMBO_unit6, 0x403, 3, 0
+0xc8b6, "\000" 
+    IDC_COMBO_unit7, 0x403, 5, 0
+0xf6c2, 0xe5b3, "\000" 
+    IDC_COMBO_unit7, 0x403, 5, 0
+0xc1ba, 0xd7c3, "\000" 
+    IDC_COMBO_unit7, 0x403, 3, 0
+0xc8b6, "\000" 
+    IDC_COMBO_unit8, 0x403, 5, 0
+0xf6c2, 0xe5b3, "\000" 
+    IDC_COMBO_unit8, 0x403, 5, 0
+0xc1ba, 0xd7c3, "\000" 
+    IDC_COMBO_unit8, 0x403, 3, 0
+0xc8b6, "\000" 
+    IDC_COMBO_unit9, 0x403, 5, 0
+0xf6c2, 0xe5b3, "\000" 
+    IDC_COMBO_unit9, 0x403, 5, 0
+0xc1ba, 0xd7c3, "\000" 
+    IDC_COMBO_unit9, 0x403, 3, 0
+0xc8b6, "\000" 
+    0
+END
+
+IDD_DIALOG_AUTO DLGINIT
+BEGIN
+    IDC_COMBO_ROUND, 0x403, 6, 0
+0xdab5, 0xc231, 0x00d6, 
+    IDC_COMBO_ROUND, 0x403, 6, 0
+0xdab5, 0xc232, 0x00d6, 
+    IDC_COMBO_ROUND, 0x403, 6, 0
+0xdab5, 0xc233, 0x00d6, 
+    IDC_COMBO_ROUND, 0x403, 6, 0
+0xdab5, 0xc234, 0x00d6, 
+    IDC_COMBO_ROUND, 0x403, 6, 0
+0xdab5, 0xc235, 0x00d6, 
+    IDC_COMBO_ROUND, 0x403, 6, 0
+0xdab5, 0xc236, 0x00d6, 
+    IDC_COMBO_ROUND, 0x403, 6, 0
+0xdab5, 0xc237, 0x00d6, 
+    IDC_COMBO_searchSpeedMode, 0x403, 6, 0
+0x5f4d, 0x4f4c, 0x0057, 
+    IDC_COMBO_searchSpeedMode, 0x403, 7, 0
+0x5f4d, 0x4948, 0x4847, "\000" 
+    IDC_COMBO_PROCESSNUM, 0x403, 6, 0
+0xdab5, 0xb431, 0x00ce, 
+    IDC_COMBO_PROCESSNUM, 0x403, 6, 0
+0xdab5, 0xb432, 0x00ce, 
+    IDC_COMBO_PROCESSNUM, 0x403, 6, 0
+0xdab5, 0xb433, 0x00ce, 
+    0
+END
+
+IDD_DIALOG_EditProcess DLGINIT
+BEGIN
+    IDC_MFCVSLISTBOX1, 0x37c, 277, 0
+0x4d3c, 0x4346, 0x5356, 0x694c, 0x7473, 0x6f62, 0x5f78, 0x7242, 0x776f, 
+0x6573, 0x7542, 0x7474, 0x6e6f, 0x543e, 0x5552, 0x3c45, 0x4d2f, 0x4346, 
+0x5356, 0x694c, 0x7473, 0x6f62, 0x5f78, 0x7242, 0x776f, 0x6573, 0x7542, 
+0x7474, 0x6e6f, 0x3c3e, 0x464d, 0x5643, 0x4c53, 0x7369, 0x6274, 0x786f, 
+0x4e5f, 0x7765, 0x7542, 0x7474, 0x6e6f, 0x543e, 0x5552, 0x3c45, 0x4d2f, 
+0x4346, 0x5356, 0x694c, 0x7473, 0x6f62, 0x5f78, 0x654e, 0x4277, 0x7475, 
+0x6f74, 0x3e6e, 0x4d3c, 0x4346, 0x5356, 0x694c, 0x7473, 0x6f62, 0x5f78, 
+0x6552, 0x6f6d, 0x6576, 0x7542, 0x7474, 0x6e6f, 0x543e, 0x5552, 0x3c45, 
+0x4d2f, 0x4346, 0x5356, 0x694c, 0x7473, 0x6f62, 0x5f78, 0x6552, 0x6f6d, 
+0x6576, 0x7542, 0x7474, 0x6e6f, 0x3c3e, 0x464d, 0x5643, 0x4c53, 0x7369, 
+0x6274, 0x786f, 0x555f, 0x4270, 0x7475, 0x6f74, 0x3e6e, 0x5254, 0x4555, 
+0x2f3c, 0x464d, 0x5643, 0x4c53, 0x7369, 0x6274, 0x786f, 0x555f, 0x4270, 
+0x7475, 0x6f74, 0x3e6e, 0x4d3c, 0x4346, 0x5356, 0x694c, 0x7473, 0x6f62, 
+0x5f78, 0x6f44, 0x6e77, 0x7542, 0x7474, 0x6e6f, 0x543e, 0x5552, 0x3c45, 
+0x4d2f, 0x4346, 0x5356, 0x694c, 0x7473, 0x6f62, 0x5f78, 0x6f44, 0x6e77, 
+0x7542, 0x7474, 0x6e6f, "\076" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_IOControl AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_CONTROLSERIALNETPORT_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_Login AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_CreateProcess AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_EditProcess AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_Editor AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_Path AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_SERIAL1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_Examination AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_FlowChart AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_Robot AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "文件"
+    BEGIN
+        MENUITEM "保存日志",                        ID_Save
+        MENUITEM "打开日志",                        ID_Openword
+    END
+    POPUP "设备调试"
+    BEGIN
+        POPUP "运动轴调试"
+        BEGIN
+            MENUITEM "微动调整轴",                       ID_Station1
+            MENUITEM "宏动轴",                         ID_Station2
+        END
+        MENUITEM "IO调试",                        ID_32776
+        MENUITEM "视觉调试",                        ID_VisionTest
+        MENUITEM "机器人调试",                       ID_RobotTest
+    END
+    POPUP "参数设置"
+    BEGIN
+        MENUITEM "运动轴参数",                       ID_Setaxis
+        MENUITEM "IO参数",                        ID_SetIO
+        MENUITEM "视觉参数",                        ID_SetCCD
+    END
+    POPUP "数据库"
+    BEGIN
+        MENUITEM "打开数据库",                       ID_OpenData
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "脚本说明",                        ID_Script
+        MENUITEM "故障列表",                        ID_Fault
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_Login        BITMAP                  "res\\psd11977.bmp"
+
+BUTTON1U                BITMAP                  "res\\未标题-4.bmp"
+
+BUTTON1D                BITMAP                  "res\\未标题-5.bmp"
+
+IDB_BITMAP2             BITMAP                  "res\\未标题-1.bmp"
+
+IDB_BITMAP3             BITMAP                  "res\\未标题-2.bmp"
+
+IDB_BITMAP4             BITMAP                  "res\\bitmap4.bmp"
+
+IDB_BITMAP_openTXT      BITMAP                  "res\\open TXT.bmp"
+
+IDB_BITMAP_DelayTime    BITMAP                  "res\\DelayTime.bmp"
+
+IDB_BITMAP_Robot        BITMAP                  "res\\Robot.bmp"
+
+IDB_BITMAP_Light        BITMAP                  "res\\Light.bmp"
+
+IDB_BITMAP_IO           BITMAP                  "res\\IO.bmp"
+
+IDB_BITMAP_closeTXT     BITMAP                  "res\\closeTXT.bmp"
+
+IDB_BITMAP_Wait         BITMAP                  "res\\waituntil.bmp"
+
+IDB_BITMAP_Order        BITMAP                  "res\\ordercontinue.bmp"
+
+IDB_BITMAP_AbsolutePositionInquiry BITMAP                  "res\\AbsolutePositionInquiry.bmp"
+
+IDB_BITMAP_AxisGoHome   BITMAP                  "res\\AxisGoHome.bmp"
+
+IDB_BITMAP_AxisGoNegativeLimit BITMAP                  "res\\AxisGoNegativeLimit.bmp"
+
+IDB_BITMAP_AxisGoPositiveLimit BITMAP                  "res\\AxisGoPositiveLimit.bmp"
+
+IDB_BITMAP_AxisMove     BITMAP                  "res\\AxisMove.bmp"
+
+IDB_BITMAP_AXISSAVE     BITMAP                  "res\\AxisSave.bmp"
+
+IDB_BITMAP_AxisSetHome  BITMAP                  "res\\AxisSetHome.bmp"
+
+IDB_BITMAP_AxisSetTargetSpeed BITMAP                  "res\\AxisSetTargetSpeed.bmp"
+
+IDB_BITMAP_LimitInquiry BITMAP                  "res\\LimitInquiry.bmp"
+
+IDB_BITMAP_RelativePositionInquiry BITMAP                  "res\\RelativePositionInquiry.bmp"
+
+IDB_BITMAP_ImageProcessing BITMAP                  "res\\ImageProcessing.bmp"
+
+IDB_BITMAP_Start        BITMAP                  "res\\开始.bmp"
+
+IDB_BITMAP_FlowChart    BITMAP                  "res\\flow.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 controlSerialNetPort(&A)..."
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\controlSerialNetPort.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
