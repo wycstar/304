@@ -145,6 +145,7 @@ typedef struct
 extern  class CDialoglogin;
 
 MIL_INT MFTYPE ProcessingFunction(MIL_INT HookType, MIL_ID HookId, void* HookDataPtr);
+MIL_INT MFTYPE ProcessingFunctionOM(MIL_INT HookType, MIL_ID HookId, void* HookDataPtr);
 MIL_INT MFTYPE CamPresentFunction(MIL_INT HookType,MIL_ID HookId,void* HookDataPtr);
 int SingleModelExample304(MIL_ID MilSystem, MIL_ID MilImage, MIL_ID MilOverlayImage, int workNum, PositionInfo* output);
 //DigHookDataStruct DigUserHookData[MAX_CAM];
@@ -219,12 +220,13 @@ public:
 		MIL_INT& SizeBand, MIL_INT& BufType,
 		MIL_INT64& Attribute);
 	void AddAdapterToList(SysHookDataStruct* UserSt, MIL_TEXT_PTR AdapterName);
-	void DigStartAcquisition(DigHookDataStruct* UserSt, int flag);
+	void DigStartAcquisition(DigHookDataStruct* UserSt, int flag, int pType);
 	void DigStopAcquisition(DigHookDataStruct* UserSt);
 	void DigFreeResources(DigHookDataStruct* UserSt);
-	int imageProcess(DigHookDataStruct* DigUserHookData, PositionInfo* proResult, int work);
-	//void bnProcess(MIL_ID iImageBuffer, MIL_ID oImageBuffer);
+	int imageProcess(DigHookDataStruct* DigUserHookData, PositionInfo* proResult, int work, int pType);
 
+	//void bnProcess(MIL_ID iImageBuffer, MIL_ID oImageBuffer);
+	int imageProcess_OM(DigHookDataStruct* DigUserHookData, PositionInfo* proResult, int workNum);
 	int autoRelSMOV(int axisNum, CString IP, int workNum, int relPos, bool* isContinue);
 
 	void MilDestroy();

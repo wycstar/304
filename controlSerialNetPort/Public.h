@@ -43,7 +43,7 @@
 
 #define ERRO1 _T("返回数据错误")
 #define loopTime 250
-#define startTime 100
+#define myStartTime 100
 #define initFindTime 30
 
 //角度补偿量、像素脉冲比例系数
@@ -60,7 +60,7 @@
 #define RUN_MODE ('R'+'M') // 82 + 77 = 159 = 0x9F
 #define FEAT_SETUP_MODE ('F'+'M') // 70 + 77 = 147 = 0x93
 #define YES 'Y'
-#define NO 'N'
+//#define NO 'N'
 #define NO_STITCH ('N'+'S') // 78 + 83 = 161 = 0xA1
 #define AUTO_STITCH ('A'+'S') // 65 + 83 = 148 = 0x94
 #define MANUAL_STITCH ('M'+'S') // 77 + 83 = 160 = 0xA0
@@ -139,6 +139,8 @@ typedef struct
 	int maxMatchNum;
 	int matchNum;
 	CString modelFilePath;
+	CString ImgSaveSeq;
+	CString OMModelName;
 	int smoothness;
 	int iterationNum;
 	int ROI_x;

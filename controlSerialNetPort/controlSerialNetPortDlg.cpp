@@ -20,15 +20,16 @@
 #include "DialogCreatProcess.h"
 #include "DiailogEditor.h"
 #include "DialogRobot.h"
+#include "inference.h"
+#include <map>
 #include "Public.h"
-
 
 #include "conio.h"
 
 #include "USB3200.h"
 #include <iostream>
 #include <fstream>
-using namespace std;
+//using namespace std;
 
 F64 VoltBuffer[32768];
 
@@ -5367,8 +5368,39 @@ int CcontrolSerialNetPortDlg::explainImageErrorAndRatio(CStdioFile* file, int wo
 
 int CcontrolSerialNetPortDlg::explainOmissionDetection(CStdioFile* file, int workNum, bool* Continue)
 {
-	OutputDebugString(L"Explain Omission");
-	return 0;
+	if (*Continue == false)
+		return 0;
+
+	CString comm[3];
+	CString MiddleComm;
+	for (int i = 0; i < 9; i++)
+	{
+		comm[i] = ChineseTransformation(MiddleComm, file);//0 ABJG?  1Â·¾¶ 2±êºÅ
+	}
+
+	CString number = explainParameter(_T("Number"), comm[2]);
+
+	// CString ROIX = explainParameter(_T("Ä£Ê½Ê¶±ğÖĞµÄROIX"), comm[0]);
+	// int x = _ttoi(ROIX);//×Ö·û×ª»»³ÉÕûĞÎ
+	// CPublic::g_imagePara1[workNum].ROI_x = x;
+
+
+	CPublic::g_imagePara1[workNum].ImgSaveSeq = comm[2];
+	CPublic::g_imagePara1[workNum].OMModelName = comm[0];
+
+	CString Path = explainParameter(_T("Ä£Ê½Ê¶±ğÖĞµÄPath"), comm[1]);
+	CPublic::g_imagePara1[workNum].modelFilePath = CPublic::pathSwitch(Path);//Â·¾¶×ª»»
+
+	//CPublic::g_typeOfImagePro[workNum] = 0;
+
+	int res = imageProcess(&DigUserHookData[workNum], &CPublic::g_imagePosInfo1[workNum][(CPublic::g_imagePara1[workNum].proNum - 1) % PRONUM1], workNum, 2);//---------------£¨1.2.1.5.1.1£©»ñÈ¡Í¼Ïñ´¦Àí½á¹ûº¯Êı
+
+
+	/*AddString(_T("Ïß³Ì") + CPublic::int2CString(workNum + 1) + _T("µÚ") + CPublic::int2CString(CPublic::g_imagePara1[workNum].proNum) + _T("´ÎÍ¼Ïñ´¦Àí½á¹ûXÖµ£º") + CPublic::double2CString(CPublic::g_imagePosInfo1[workNum][(CPublic::g_imagePara1[workNum].proNum - 1) % PRONUM1].x));
+	AddString(_T("Ïß³Ì") + CPublic::int2CString(workNum + 1) + _T("µÚ") + CPublic::int2CString(CPublic::g_imagePara1[workNum].proNum) + _T("´ÎÍ¼Ïñ´¦Àí½á¹ûYÖµ£º") + CPublic::double2CString(CPublic::g_imagePosInfo1[workNum][(CPublic::g_imagePara1[workNum].proNum - 1) % PRONUM1].y));
+	AddString(_T("Ïß³Ì") + CPublic::int2CString(workNum + 1) + _T("µÚ") + CPublic::int2CString(CPublic::g_imagePara1[workNum].proNum) + _T("´ÎÍ¼Ïñ´¦Àí½á¹ûAÖµ£º") + CPublic::double2CString(CPublic::g_imagePosInfo1[workNum][(CPublic::g_imagePara1[workNum].proNum - 1) % PRONUM1].a));*/
+	m_progress.OffsetPos(1);//½ø¶ÈÌõ
+
 }
 
 
@@ -5449,7 +5481,7 @@ int CcontrolSerialNetPortDlg::explainImageProcessing1(CStdioFile* file, int work
 	//
 	CPublic::g_typeOfImagePro[workNum] = 0;
 
-	int res = imageProcess(&DigUserHookData[workNum], &CPublic::g_imagePosInfo1[workNum][(CPublic::g_imagePara1[workNum].proNum - 1) % PRONUM1], workNum);//---------------£¨1.2.1.5.1.1£©»ñÈ¡Í¼Ïñ´¦Àí½á¹ûº¯Êı
+	int res = imageProcess(&DigUserHookData[workNum], &CPublic::g_imagePosInfo1[workNum][(CPublic::g_imagePara1[workNum].proNum - 1) % PRONUM1], workNum, 0);//---------------£¨1.2.1.5.1.1£©»ñÈ¡Í¼Ïñ´¦Àí½á¹ûº¯Êı
 
 
 	AddString(_T("Ïß³Ì") + CPublic::int2CString(workNum+1) + _T("µÚ")+CPublic::int2CString(CPublic::g_imagePara1[workNum].proNum) + _T("´ÎÍ¼Ïñ´¦Àí½á¹ûXÖµ£º") + CPublic::double2CString(CPublic::g_imagePosInfo1[workNum][(CPublic::g_imagePara1[workNum].proNum - 1) % PRONUM1].x));
@@ -5680,10 +5712,10 @@ int CcontrolSerialNetPortDlg::explainImageProcessing1(CStdioFile* file, int work
 	*/
 }
 
-int CcontrolSerialNetPortDlg::imageProcess(DigHookDataStruct* DigUserHookData, PositionInfo* proResult, int workNum)
+int CcontrolSerialNetPortDlg::imageProcess(DigHookDataStruct* DigUserHookData, PositionInfo* proResult, int workNum, int pType)
 {
 
-	DigStartAcquisition(DigUserHookData, 1);
+	DigStartAcquisition(DigUserHookData, 1, pType);
 	proResult->x = CPublic::g_positionInfo[workNum].x;
 	proResult->y = CPublic::g_positionInfo[workNum].y;
 	proResult->a = CPublic::g_positionInfo[workNum].a;
@@ -5748,7 +5780,7 @@ int CcontrolSerialNetPortDlg::explainImageProcessing2(CStdioFile* file, int work
 	CPublic::g_typeOfImagePro[workNum] = 1;
 	//DigUserHookData[workNum].workNum = workNum;
 
-	//int res =imageProcess(&DigUserHookData[workNum], &CPublic::g_imagePosInfo2[workNum][(CPublic::g_imagePara1[workNum].proNum - 1) % PRONUM2], workNum);
+	// int res = imageProcess(&DigUserHookData[workNum], &CPublic::g_imagePosInfo2[workNum][(CPublic::g_imagePara1[workNum].proNum - 1) % PRONUM2], workNum);
 
 	AddString(_T("Ïß³Ì") + CPublic::int2CString(workNum) + _T("µÚ") + CPublic::int2CString(CPublic::g_imagePara1[workNum].proNum) + _T("´ÎÍ¼Ïñ´¦Àí½á¹ûXÖµ£º") + CPublic::double2CString(CPublic::g_imagePosInfo1[workNum][(CPublic::g_imagePara1[workNum].proNum - 1) % PRONUM1].x));
 	AddString(_T("Ïß³Ì") + CPublic::int2CString(workNum) + _T("µÚ") + CPublic::int2CString(CPublic::g_imagePara1[workNum].proNum) + _T("´ÎÍ¼Ïñ´¦Àí½á¹ûYÖµ£º") + CPublic::double2CString(CPublic::g_imagePosInfo1[workNum][(CPublic::g_imagePara1[workNum].proNum - 1) % PRONUM1].y));
@@ -7074,7 +7106,7 @@ int CcontrolSerialNetPortDlg::explainGoldComm(CString comm, char* byteComm)//½ğË
 	}
 	else if (comm.Left(2) == _T("NO"))
 	{
-		byteComm[0] = NO;
+		byteComm[0] = 'N';
 		len = 2;
 	}
 	else if (comm.Left(9) == _T("NO_STITCH"))
@@ -7556,11 +7588,11 @@ void CcontrolSerialNetPortDlg::OnBnClickedButton5()
 	// TODO: ÔÚ´ËÌí¼Ó¿Ø¼şÍ¨Öª´¦Àí³ÌĞò´úÂë
 
 	GetDlgItem(IDC_BUTTON5)->EnableWindow(FALSE);
-	DigStartAcquisition(&DigUserHookData[0], 0);
+	DigStartAcquisition(&DigUserHookData[0], 0, 0);
 	DigUserHookData[0].IsContinueGrab = true;
-	DigStartAcquisition(&DigUserHookData[1], 0);
+	DigStartAcquisition(&DigUserHookData[1], 0, 0);
 	DigUserHookData[1].IsContinueGrab = true;
-	DigStartAcquisition(&DigUserHookData[2], 0);
+	DigStartAcquisition(&DigUserHookData[2], 0, 0);
 	DigUserHookData[2].IsContinueGrab = true;
 
 
@@ -8300,6 +8332,278 @@ MIL_INT MFTYPE ProcessingFunction(MIL_INT HookType,
 	return 0;
 }
 
+
+//´íÂ©×°ÑÕÉ«×¢ÊÍ±í
+std::map<std::string, cv::Scalar> create_class_colors(const std::vector<std::string>& classes)
+{
+	std::map<std::string, cv::Scalar> class_colors;
+	cv::RNG rng(12345);  // ¹Ì¶¨Ëæ»úÖÖ×Ó£¬ÒÔ±ãÃ¿´ÎÑÕÉ«¶¼Ò»ÖÂ
+	for (const auto& cls : classes) {
+		// ÎªÃ¿¸öÀà±ğÉú³ÉÒ»¸öËæ»úÑÕÉ«
+		cv::Scalar color(rng.uniform(0, 256), rng.uniform(0, 256), rng.uniform(0, 256));
+		class_colors[cls] = color;
+	}
+	return class_colors;
+}
+
+
+void file_iterator(DCSP_CORE*& p, const std::string& img_path, const std::string& output_path, int a)
+{
+	// ´´½¨Àà±ğÑÕÉ«Ó³Éä±í
+	std::map<std::string, cv::Scalar> class_colors = create_class_colors(p->classes);
+
+	// ¶ÁÈ¡Í¼Ïñ
+	cv::Mat img = cv::imread(img_path);
+	if (img.empty()) {
+		mainDlg->AddString(_T("Error: Could not read the image"));
+		return;
+	}
+
+	// ÔËĞĞÄ¿±ê¼ì²â
+	std::vector<DCSP_RESULT> res;
+	p->RunSession(img, res);
+
+	// ´´½¨Ò»¸ösetÓÃÓÚ´æ´¢µ±Ç°Í¼Æ¬ÖĞµÄ¼ì²âµ½µÄÄ¿±êÀà±ğ
+	std::set<std::string> detected_classes;
+
+	for (auto& re : res) {
+		// »ñÈ¡µ±Ç°Àà±ğµÄÃû³Æ
+		std::string class_name = p->classes[re.classId];
+
+		// ½«¼ì²âµ½µÄÀà±ğÌí¼Óµ½setÖĞ
+		detected_classes.insert(class_name);
+
+		// »ñÈ¡µ±Ç°Àà±ğµÄÑÕÉ«
+		cv::Scalar color = class_colors[class_name];
+
+		// »æÖÆbounding box
+		cv::rectangle(img, re.box, color, 3);
+
+		// »æÖÆÖÃĞÅ¶ÈºÍÀà±ğ±êÇ©
+		float confidence = floor(100 * re.confidence) / 100;
+		std::cout << std::fixed << std::setprecision(2);
+		std::string label = class_name + " " + std::to_string(confidence).substr(0, std::to_string(confidence).size() - 4);
+
+		cv::rectangle(
+			img,
+			cv::Point(re.box.x, re.box.y - 25),
+			cv::Point(re.box.x + label.length() * 15, re.box.y),
+			color,
+			cv::FILLED
+		);
+
+		cv::putText(
+			img,
+			label,
+			cv::Point(re.box.x, re.box.y - 5),
+			cv::FONT_HERSHEY_SIMPLEX,
+			0.75,
+			cv::Scalar(0, 0, 0),
+			2
+		);
+	}
+
+	if (a == 0)
+	{
+		// ³¡¾°1ÅĞ¶Ï£ºÄ¿±ê1,2,3,4±ØĞë´æÔÚ£¬Ä¿±ê5,6,7,8,9,10±ØĞë²»´æÔÚ
+		std::vector<std::string> required_classes_scenario1 = { "TH-JB", "HZHK-TH", "ZX-JB", "GLB-ZX" };
+		std::vector<std::string> forbidden_classes_scenario1 = { "TH-JB-ER", "HZHK-TH-ER", "ZX-JB-ER", "GLB-ZX-ER" };
+
+		bool scenario1_pass = true;
+		for (const auto& req_class : required_classes_scenario1) {
+			if (detected_classes.find(req_class) == detected_classes.end()) {
+				scenario1_pass = false;  // ±ØÒªÀà±ğ²»´æÔÚ
+				break;
+			}
+		}
+		for (const auto& forbid_class : forbidden_classes_scenario1) {
+			if (detected_classes.find(forbid_class) != detected_classes.end()) {
+				scenario1_pass = false;  // ½ûÖ¹Àà±ğ´æÔÚ
+				break;
+			}
+		}
+		// Êä³öÅĞ¶Ï½á¹û
+		if (scenario1_pass = true)
+		{
+			mainDlg->AddString(_T("abjg´íÂ©×°¼ì²âºÏ¸ñ"));
+		}
+		else if (scenario1_pass = false)
+		{
+			mainDlg->AddString(_T("abjg´íÂ©×°¼ì²â²»ºÏ¸ñ"));
+		}
+
+	}
+	else if (a == 1)
+	{
+		// ³¡¾°2ÅĞ¶Ï£ºÄ¿±ê9±ØĞë´æÔÚ£¬Ä¿±ê1,2,3,4,5,6,7,8,10±ØĞë²»´æÔÚ
+		std::vector<std::string> required_classes_scenario2 = { "WLG" };
+		std::vector<std::string> forbidden_classes_scenario2 = { "TH-JB", "HZHK-TH", "ZX-JB", "GLB-ZX", "TH-JB-ER", "HZHK-TH-ER", "ZX-JB-ER", "GLB-ZX-ER", "WLG-ER" };
+
+		bool scenario2_pass = true;
+		for (const auto& req_class : required_classes_scenario2)
+		{
+			if (detected_classes.find(req_class) == detected_classes.end()) {
+				scenario2_pass = false;  // ±ØÒªÀà±ğ²»´æÔÚ
+				break;
+			}
+		}
+		for (const auto& forbid_class : forbidden_classes_scenario2)
+		{
+			if (detected_classes.find(forbid_class) != detected_classes.end()) {
+				scenario2_pass = false;  // ½ûÖ¹Àà±ğ´æÔÚ
+				break;
+			}
+		}
+		// Êä³öÅĞ¶Ï½á¹û
+		if (scenario2_pass = true)
+		{
+			mainDlg->AddString(_T("wlg´íÂ©×°¼ì²âºÏ¸ñ"));
+		}
+		else if (scenario2_pass = false)
+		{
+			mainDlg->AddString(_T("wlg´íÂ©×°¼ì²â²»ºÏ¸ñ"));
+		}
+	}
+
+
+	// Í¼Æ¬±£´æµ½Ö¸¶¨Â·¾¶
+	if (!cv::imwrite(output_path, img)) {
+		mainDlg->AddString(_T("¼ì²â½á¹ûÍ¼Ïñ±£´æÊ§°Ü"));
+	}
+	else {
+		mainDlg->AddString(_T("¼ì²â½á¹ûÍ¼Ïñ±£´æ³É¹¦"));
+	}
+}
+
+// MilImageÎªµ±Ç°Èí¼şÊµÊ±ÏÔÊ¾µÄÍ¼ÏñImageBuffer, MilOverlayImageÎªµ±Ç°Ïà»úÏÔÊ¾ÖĞµÄ×¢ÊÍ²ã£¬resultÎªÊä³öµÄ½á¹ûÊı×é
+int OMprocess304(MIL_ID MilSystem, MIL_ID MilImage, MIL_ID MilOverlayImage, int workNum, PositionInfo* output)
+{
+	output->x = 0;
+	output->y = 0;
+	output->a = 0;
+
+	char tempCatStr[256] = { 0 };
+	snprintf(tempCatStr, sizeof(tempCatStr), "%s\\%d%s", CT2A(CPublic::g_imagePara1[workNum].modelFilePath), CPublic::g_imagePara1[workNum], ".bmp");
+	CString imgpath_or(tempCatStr);
+	memset(tempCatStr, sizeof(tempCatStr), 0);
+	snprintf(tempCatStr, sizeof(tempCatStr), "%s\\%d%s", CT2A(CPublic::g_imagePara1[workNum].modelFilePath), "models\\best1.onnx");
+	CString model_path(tempCatStr);
+	memset(tempCatStr, sizeof(tempCatStr), 0);
+	snprintf(tempCatStr, sizeof(tempCatStr), "%s\\%d%s", CT2A(CPublic::g_imagePara1[workNum].modelFilePath), "_om.bmp");
+	CString imgpath_om(tempCatStr);
+
+	MbufExport(imgpath_or, M_BMP, MilImage);//±£´æÍ¼Ïñ
+
+
+	CStringW cstrW1(imgpath_or); // ×ª»»Îª Unicode CString
+	std::wstring stdWStr1 = cstrW1.GetString(); // »ñÈ¡ std::wstring
+	std::string stdimgpath_or(std::begin(stdWStr1), std::end(stdWStr1)); // ×ª»»Îª std::string
+
+	CStringW cstrW2(model_path); // ×ª»»Îª Unicode CString
+	std::wstring stdWStr2 = cstrW2.GetString(); // »ñÈ¡ std::wstring
+	std::string stdmodel_path(std::begin(stdWStr2), std::end(stdWStr2)); // ×ª»»Îª std::string
+
+	CStringW cstrW3(imgpath_om); // ×ª»»Îª Unicode CString
+	std::wstring stdWStr3 = cstrW3.GetString(); // »ñÈ¡ std::wstring
+	std::string stdimgpath_om(std::begin(stdWStr3), std::end(stdWStr3)); // ×ª»»Îª std::string
+
+
+	//¿ªÊ¼´íÂ©×°¼ì²â
+	DCSP_CORE* yoloDetector = new DCSP_CORE;
+	//std::string model_path = "./models/best1.onnx";
+	yoloDetector->classes = { "TH-JB","HZHK-TH","ZX-JB","GLB-ZX","TH-JB-ER","HZHK-TH-ER","ZX-JB-ER","GLB-ZX-ER" };
+	DCSP_INIT_PARAM params{ stdmodel_path, YOLO_ORIGIN_V8, {640, 640}, 0.1, 0.5, false };
+	yoloDetector->CreateSession(params);
+
+	// µ÷ÓÃĞŞ¸ÄºóµÄfile_iterator
+
+	if (CPublic::g_imagePara1[workNum].OMModelName == "\r\nABJG")
+	{
+		file_iterator(yoloDetector, stdimgpath_or, stdimgpath_om, 0);
+	}
+	else if (CPublic::g_imagePara1[workNum].OMModelName == "\r\nWLG")
+	{
+		file_iterator(yoloDetector, stdimgpath_or, stdimgpath_om, 1);
+	}
+	return 1;
+}
+
+
+MIL_INT MFTYPE ProcessingFunctionOM(MIL_INT HookType,
+	MIL_ID HookId,
+	void* HookDataPtr)
+{
+	DigHookDataStruct* UserHookDataPtr = (DigHookDataStruct*)HookDataPtr;
+
+	if (UserHookDataPtr->GrabInProgress == M_TRUE)
+	{
+		MIL_ID ModifiedBufferId = 0, overlayBufferId = 0;
+		MIL_INT ResendRequests = 0, PacketsMissed = 0, IsCorrupt = 0;
+
+		/* Retrieve the MIL_ID of the grabbed buffer and camera statistics. */
+		MdigGetHookInfo(HookId, M_MODIFIED_BUFFER + M_BUFFER_ID, &ModifiedBufferId);
+		MdigGetHookInfo(HookId, M_GC_PACKETS_RESENDS_NUM, &ResendRequests);
+		MdigGetHookInfo(HookId, M_GC_PACKETS_MISSED, &PacketsMissed);
+		MdigGetHookInfo(HookId, M_CORRUPTED_FRAME, &IsCorrupt);
+
+		UserHookDataPtr->ResendRequests += ResendRequests;
+		UserHookDataPtr->PacketsMissed += PacketsMissed;
+
+		/* Copy the grabbed frame to display. */
+		if (IsCorrupt)
+		{
+			UserHookDataPtr->CorruptImageCount++;
+			mainDlg->AddString(_T("²É¼¯Í¼ÏñÖ¡´íÎó£¿"));
+		}
+
+		else
+		{
+			UserHookDataPtr->ProcessedImageCount++;
+			if (UserHookDataPtr->IsContinueGrab == true)
+			{
+				MbufCopy(ModifiedBufferId, UserHookDataPtr->MilImageDisp);
+			}
+			else
+			{
+				if (UserHookDataPtr->MilDisplay)
+				{
+					MdispControl(UserHookDataPtr->MilDisplay, M_FILL_DISPLAY, M_ENABLE);        /*Í¼ÏñÌî³äÏÔÊ¾´°¿Ú*/
+					MdispControl(UserHookDataPtr->MilDisplay, M_OVERLAY_CLEAR, M_DEFAULT);        /*×¢ÊÍ²ã³õÊ¼»¯*/
+					MdispInquire(UserHookDataPtr->MilDisplay, M_OVERLAY_ID, &UserHookDataPtr->MilOverlay);    /*ÔØÈë×¢ÊÍ²ã*/
+				}
+
+				MbufCopy(ModifiedBufferId, UserHookDataPtr->MilImageDisp);
+				Sleep(20);
+				int workNum = UserHookDataPtr->workNum;
+								
+				int state = OMprocess304(UserHookDataPtr->MilSystem, ModifiedBufferId, UserHookDataPtr->MilOverlay, workNum, &CPublic::g_positionInfo[workNum]);
+				if (state == 1)
+				{
+					MbufCopy(ModifiedBufferId, UserHookDataPtr->MilImageDisp);
+					mainDlg->AddString(_T("´íÂ©×°¼ì²âÖ´ĞĞÍê±Ï"));
+				}
+				else
+				{
+					mainDlg->AddString(_T("´íÂ©×°¼ì²âÖ´ĞĞÊ§°Ü"));
+				}
+
+				
+
+
+				//bnProcess(mainDlg->SysUserHookData.MilSystem, ModifiedBufferId, UserHookDataPtr->MilOverlay, ModifiedBufferId);
+
+			}
+
+
+		}
+
+	}
+
+
+
+	return 0;
+}
+
 // MilImageÎªµ±Ç°Èí¼şÊµÊ±ÏÔÊ¾µÄÍ¼ÏñImageBuffer, MilOverlayImageÎªµ±Ç°Ïà»úÏÔÊ¾ÖĞµÄ×¢ÊÍ²ã£¬resultÎªÊä³öµÄ½á¹ûÊı×é
 int SingleModelExample304(MIL_ID MilSystem, MIL_ID MilImage, MIL_ID MilOverlayImage, int workNum, PositionInfo* output)
 {
@@ -8428,7 +8732,6 @@ int SingleModelExample304(MIL_ID MilSystem, MIL_ID MilImage, MIL_ID MilOverlayIm
 	MmodFree(MilResult);
 	return 1;
 }
-
 
 
 void CcontrolSerialNetPortDlg::MilCreate()
@@ -8759,18 +9062,23 @@ void CcontrolSerialNetPortDlg::AddAdapterToList(SysHookDataStruct* UserSt, MIL_T
 }
 
 
-void CcontrolSerialNetPortDlg::DigStartAcquisition(DigHookDataStruct* UserSt, int flag)
+void CcontrolSerialNetPortDlg::DigStartAcquisition(DigHookDataStruct* UserSt, int flag, int pType)
 {
 	if (UserSt->MilDigitizer)
 	{
 		UserSt->GrabInProgress = M_TRUE;
 
 		MIL_INT64 oporation = (flag == 0) ? M_START : M_SEQUENCE + M_COUNT(1);
-		MdigProcess(UserSt->MilDigitizer, UserSt->MilGrabBufferList,
-			UserSt->MilGrabBufferListSize, oporation, M_DEFAULT,
-			ProcessingFunction, UserSt);
-
-
+		if (pType == 0 || pType == 1) {
+			MdigProcess(UserSt->MilDigitizer, UserSt->MilGrabBufferList,
+				UserSt->MilGrabBufferListSize, oporation, M_DEFAULT,
+				ProcessingFunction, UserSt);
+		}
+		else if (pType == 2) {
+			MdigProcess(UserSt->MilDigitizer, UserSt->MilGrabBufferList,
+				UserSt->MilGrabBufferListSize, oporation, M_DEFAULT,
+				ProcessingFunctionOM, UserSt);
+		}
 		MdigInquire(UserSt->MilDigitizer, M_GC_PAYLOAD_SIZE, &UserSt->PayloadSize);
 	}
 	else
@@ -8897,7 +9205,7 @@ MIL_INT MFTYPE CamPresentFunction(MIL_INT HookType,
 
 		UserHookDataPtr->DigHookDataStrutPtr[Number].IsConnected = true;
 		/* Start acquisition. */
-		mainDlg->DigStartAcquisition(&UserHookDataPtr->DigHookDataStrutPtr[Number], 0);
+		mainDlg->DigStartAcquisition(&UserHookDataPtr->DigHookDataStrutPtr[Number], 0, 0);
 
 		delete[] MacAddress;
 	}

@@ -225,7 +225,7 @@ void CDlgSerial1::OnBnClickedButtonstart()
 	
 	closeLoopComm(2);
 	CPublic::commCount = 0;
-	SetTimer(1, startTime, NULL);
+	SetTimer(1, myStartTime, NULL);
 
 }
 
@@ -756,7 +756,7 @@ void CDlgSerial1::OnBnClickedButtonstart2()
 
 	closeLoopComm(2);
 	CPublic::commCount = 0;
-	SetTimer(3, startTime, NULL);
+	SetTimer(3, myStartTime, NULL);
 }
 
 void CDlgSerial1::OnBnClickedButtonstop2()

@@ -1,7 +1,7 @@
 #pragma once
 #include <mil.h>
 #include <iostream>
-using namespace std;
+//using namespace std;
 
 //÷·‘À∂ØΩ«∂»ŒÛ≤Ó
 #define ANG_ERROR_X        -0.032  //G1

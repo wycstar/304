@@ -818,7 +818,7 @@ void CDlgSerial6::OnBnClickedButtonstart()
 
 	closeLoopComm(1);
 	CPublic::commCount = 0;
-	SetTimer(2, startTime, NULL);
+	SetTimer(2, myStartTime, NULL);
 }
 
 void CDlgSerial6::OnBnClickedButtonstart2()
@@ -833,7 +833,7 @@ void CDlgSerial6::OnBnClickedButtonstart2()
 
 	closeLoopComm(1);
 	CPublic::commCount = 0;
-	SetTimer(3, startTime, NULL);
+	SetTimer(3, myStartTime, NULL);
 }
 
 void CDlgSerial6::OnBnClickedButtonstart3()
@@ -848,7 +848,7 @@ void CDlgSerial6::OnBnClickedButtonstart3()
 
 	closeLoopComm(1);
 	CPublic::commCount = 0;
-	SetTimer(4, startTime, NULL);
+	SetTimer(4, myStartTime, NULL);
 }
 
 void CDlgSerial6::OnBnClickedButtonstart4()
@@ -863,7 +863,7 @@ void CDlgSerial6::OnBnClickedButtonstart4()
 
 	closeLoopComm(1);
 	CPublic::commCount = 0;
-	SetTimer(5, startTime, NULL);
+	SetTimer(5, myStartTime, NULL);
 }
 
 void CDlgSerial6::OnBnClickedButtonstop()
