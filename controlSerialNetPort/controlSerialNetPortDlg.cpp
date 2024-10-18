@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "Dialoglogin.h"
 #include<string>
+#include <ctime>
 #include "controlSerialNetPort.h"
 #include "controlSerialNetPortDlg.h"
 #include "DlgSerial1.h"
@@ -64,6 +65,8 @@ CcontrolSerialNetPortDlg* pMainDlg;
 extern CDialoglogin* pDlg;
 extern CDialogCreatProcess* pCreateProcess;
 extern CFlowChart* pFlow;
+
+bool m_ImgProcessState = false; //模板匹配结果 
 
 USB3200_AI_PARAM AIParam;
 USB3200_AI_STATUS AIStatus;
@@ -6201,104 +6204,110 @@ int CcontrolSerialNetPortDlg::explainResultOfImagePro1(CStdioFile* file, int wor
 
 	if (Algorithm == _T("Angcalc"))
 	{
-		isAngel = true;
-		
-		CPublic::angcalc(&(CPublic::g_imagePosInfo1[workNum][result1 - 1]), &(CPublic::g_imagePosInfo1[workNum][result2 - 1]), workNum, &resinfo);
-		CString R_IP = explainParameter(_T("模式识别微调设备的R_IP"), comm[3]);
-		//int Rbox = _ttoi(RBox);//字符转换成整形
-		CString RPort = explainParameter(_T("模式识别微调设备的RPort"), comm[4]);
-		int Rport = _ttoi(RPort);//字符转换成整形
-		Value[0] = resinfo.a;
-		if (Value[0] >= 180)
+		if (m_ImgProcessState == true)
 		{
-			Value[0] = Value[0] - 360;
-		}
-		if (autoRelSMOV(Rport, R_IP, workNum, Value[0], Continue))
-		{
-			AddString(_T("工位") + CPublic::int2CString(workNum+1) + _T("R向伺服调整运动成功"));
+			//正常伺服角度调整
+			isAngel = true;
+			CPublic::angcalc(&(CPublic::g_imagePosInfo1[workNum][result1 - 1]), &(CPublic::g_imagePosInfo1[workNum][result2 - 1]), workNum, &resinfo);
+			CString R_IP = explainParameter(_T("模式识别微调设备的R_IP"), comm[3]);
+			//int Rbox = _ttoi(RBox);//字符转换成整形
+			CString RPort = explainParameter(_T("模式识别微调设备的RPort"), comm[4]);
+			int Rport = _ttoi(RPort);//字符转换成整形
+			Value[0] = resinfo.a;
+			if (Value[0] >= 180)
+			{
+				Value[0] = Value[0] - 360;
+			}
+			if (autoRelSMOV(Rport, R_IP, workNum, Value[0], Continue))
+			{
+				AddString(_T("工位") + CPublic::int2CString(workNum + 1) + _T("R向伺服调整运动成功"));
+			}
+			else
+			{
+				AddString(_T("工位") + CPublic::int2CString(workNum + 1) + _T("R向伺服调整运动失败"));
+				return 0;
+			}
+			m_progress.OffsetPos(1);
+
 		}
 		else
 		{
-			AddString(_T("工位") + CPublic::int2CString(workNum+1) + _T("R向伺服调整运动失败"));
-			return 0;
+			//不转角度
+			isAngel = true;
+			//CPublic::angcalc(&(CPublic::g_imagePosInfo1[workNum][result1 - 1]), &(CPublic::g_imagePosInfo1[workNum][result2 - 1]), workNum, &resinfo);
+			CString R_IP = explainParameter(_T("模式识别微调设备的R_IP"), comm[3]);
+			//int Rbox = _ttoi(RBox);//字符转换成整形
+			CString RPort = explainParameter(_T("模式识别微调设备的RPort"), comm[4]);
+			int Rport = _ttoi(RPort);//字符转换成整形
+			Value[0] = 0;
+			if (autoRelSMOV(Rport, R_IP, workNum, Value[0], Continue))
+			{
+				AddString(_T("工位") + CPublic::int2CString(workNum + 1) + _T("R向伺服调整运动成功"));
+			}
+			else
+			{
+				AddString(_T("工位") + CPublic::int2CString(workNum + 1) + _T("R向伺服调整运动失败"));
+				return 0;
+			}
 		}
-		
-		//value[0].Format(_T("%d"), Value[0]);
-		//Command[0] = RBox + _T("->SMVR") + _T(" ") + RPort + _T(" ") + value[0];
-		//Command[1] = RBox + _T("->MVR?") + _T(" ") + RPort;
-		//for (int i = 0; i < 1; i++)
-		//{
-		//	if (sendAnySingleComm(Command[i], portIndex, Continue) == 0)
-		//	{
-		//		return 0;
-		//	}
-		//}
-		//for (int i = 1; i < 2; i++)//查询指令
-		//{
-		//	if (sendAnySingleComm(Command[i], portIndex, Continue) == 0)
-		//	{
-		//		return 0;
-		//	}
-		//	int reValue = CPublic::explainIntPos(CPublic::receiveData[portIndex]);//接收到的数值
-		//	if (abs(reValue - abs(Value[i])) < CPublic::stepsError)//abs求绝对值的函数
-		//	{
-		//		return 1;
-		//	}
-		//}
-		m_progress.OffsetPos(1);
 	}
 
 	else if (Algorithm == _T("Poscalc"))
 	{
-		isAngel = false;
-
-		CPublic::poscalc(&(CPublic::g_imagePosInfo1[workNum][result1 - 1]), &(CPublic::g_imagePosInfo1[workNum][result2 - 1]), workNum, &resinfo);
-		CString X_IP = explainParameter(_T("模式识别微调设备的X_IP"), comm[3]);
-		int Xbox = _ttoi(X_IP);//字符转换成整形
-		CString XPort = explainParameter(_T("模式识别微调设备的XPort"), comm[4]);
-		int Xport = _ttoi(XPort);//字符转换成整形
-		CString Y_IP = explainParameter(_T("模式识别微调设备的Y_IP"), comm[5]);
-		int Ybox = _ttoi(Y_IP);//字符转换成整形
-		CString YPort = explainParameter(_T("模式识别微调设备的YPort"), comm[6]);
-		int Yport = _ttoi(YPort);//字符转换成整形
-		Value[0] = resinfo.x;
-		Value[1] = resinfo.y;
-		if (autoRelSMOV(Xport, X_IP, workNum, Value[0], Continue)&& autoRelSMOV(Yport, Y_IP, workNum, Value[1], Continue))
+		if (m_ImgProcessState == true)
 		{
-			AddString(_T("工位") + CPublic::int2CString(workNum+1) + _T("XY向伺服调整运动成功"));
+			//正常伺服位置调整
+			isAngel = false;
+			CPublic::poscalc(&(CPublic::g_imagePosInfo1[workNum][result1 - 1]), &(CPublic::g_imagePosInfo1[workNum][result2 - 1]), workNum, &resinfo);
+			CString X_IP = explainParameter(_T("模式识别微调设备的X_IP"), comm[3]);
+			int Xbox = _ttoi(X_IP);//字符转换成整形
+			CString XPort = explainParameter(_T("模式识别微调设备的XPort"), comm[4]);
+			int Xport = _ttoi(XPort);//字符转换成整形
+			CString Y_IP = explainParameter(_T("模式识别微调设备的Y_IP"), comm[5]);
+			int Ybox = _ttoi(Y_IP);//字符转换成整形
+			CString YPort = explainParameter(_T("模式识别微调设备的YPort"), comm[6]);
+			int Yport = _ttoi(YPort);//字符转换成整形
+			Value[0] = resinfo.x;
+			Value[1] = resinfo.y;
+			if (autoRelSMOV(Xport, X_IP, workNum, Value[0], Continue) && autoRelSMOV(Yport, Y_IP, workNum, Value[1], Continue))
+			{
+				AddString(_T("工位") + CPublic::int2CString(workNum + 1) + _T("XY向伺服调整运动成功"));
+			}
+			else
+			{
+				AddString(_T("工位") + CPublic::int2CString(workNum + 1) + _T("XY向伺服调整运动失败"));
+				return 0;
+			}
+			m_progress.OffsetPos(1);
 		}
 		else
 		{
-			AddString(_T("工位") + CPublic::int2CString(workNum+1) + _T("XY向伺服调整运动失败"));
-			return 0;
-		}
-		//value[0].Format(_T("%d"), Value[0]);
-		//value[1].Format(_T("%d"), Value[1]);
-		//Command[0] = XBox + _T("->SMVR") + _T(" ") + XPort + _T(" ") + value[0];
-		//Command[1] = YBox + _T("->SMVR") + _T(" ") + YPort + _T(" ") + value[1];
-		//Command[2] = XBox + _T("->MVR?") + _T(" ") + XPort;
-		//Command[3] = XBox + _T("->MVR?") + _T(" ") + YPort;
+			//零件回收调整
+			isAngel = false;
+			CString X_IP = explainParameter(_T("模式识别微调设备的X_IP"), comm[3]);
+			int Xbox = _ttoi(X_IP);//字符转换成整形
+			CString XPort = explainParameter(_T("模式识别微调设备的XPort"), comm[4]);
+			int Xport = _ttoi(XPort);//字符转换成整形
+			CString Y_IP = explainParameter(_T("模式识别微调设备的Y_IP"), comm[5]);
+			int Ybox = _ttoi(Y_IP);//字符转换成整形
+			CString YPort = explainParameter(_T("模式识别微调设备的YPort"), comm[6]);
+			int Yport = _ttoi(YPort);//字符转换成整形
+			Value[0] = 0;//x坐标标定
+			Value[1] = 0;//y坐标标定
+			if (autoRelSMOV(Xport, X_IP, workNum, Value[0], Continue) && autoRelSMOV(Yport, Y_IP, workNum, Value[1], Continue))
+			{
+				AddString(_T("工位") + CPublic::int2CString(workNum + 1) + _T("XY向伺服调整运动成功"));
+			}
+			else
+			{
+				AddString(_T("工位") + CPublic::int2CString(workNum + 1) + _T("XY向伺服调整运动失败"));
+				return 0;
+			}
 
-		//for (int i = 0; i < 2; i++)//轴动指令
-		//{
-		//	if (sendAnySingleComm(Command[i], portIndex, Continue) == 0)
-		//	{
-		//		return 0;
-		//	}
-		//}
-		//for (int i = 2; i < 4; i++)//查询指令
-		//{
-		//	if (sendAnySingleComm(Command[i], portIndex, Continue) == 0)
-		//	{
-		//		return 0;
-		//	}
-		//	int reValue = CPublic::explainIntPos(CPublic::receiveData[portIndex]);//接收到的数值
-		//	if (abs(reValue - abs(Value[i])) < CPublic::stepsError)//abs求绝对值的函数
-		//	{
-		//		return 1;
-		//	}
-		//}
-		m_progress.OffsetPos(1);
+			m_progress.OffsetPos(1);
+		}
+
+
 	}
 
 	/*
@@ -8304,6 +8313,7 @@ MIL_INT MFTYPE ProcessingFunction(MIL_INT HookType,
 					{
 						MbufCopy(ModifiedBufferId, UserHookDataPtr->MilImageDisp);
 						mainDlg->AddString(_T("模板匹配成功！"));
+						m_ImgProcessState = true; //模板匹配结果 
 						break;
 					}
 					else
@@ -8316,7 +8326,9 @@ MIL_INT MFTYPE ProcessingFunction(MIL_INT HookType,
 
 				if (count == 4)
 				{
-					mainDlg->m_continue[workNum] = false;
+					//mainDlg->m_continue[workNum] = false;
+					mainDlg->AddString(_T("5次模板匹配均失败，放弃装配该零件。"));
+					m_ImgProcessState = false;
 				}
 				//bnProcess(mainDlg->SysUserHookData.MilSystem, ModifiedBufferId, UserHookDataPtr->MilOverlay, ModifiedBufferId);
 
@@ -8475,6 +8487,16 @@ void file_iterator(DCSP_CORE*& p, const std::string& img_path, const std::string
 	}
 }
 
+std::string GetCurrentDateFolder() {
+	std::time_t t = std::time(nullptr);
+	std::tm tm = *std::localtime(&t);
+
+	std::ostringstream oss;
+	oss << std::put_time(&tm, "%Y-%m-%d"); // 格式化为 "YYYY-MM-DD"
+
+	return oss.str();
+}
+
 // MilImage为当前软件实时显示的图像ImageBuffer, MilOverlayImage为当前相机显示中的注释层，result为输出的结果数组
 int OMprocess304(MIL_ID MilSystem, MIL_ID MilImage, MIL_ID MilOverlayImage, int workNum, PositionInfo* output)
 {
@@ -8483,13 +8505,14 @@ int OMprocess304(MIL_ID MilSystem, MIL_ID MilImage, MIL_ID MilOverlayImage, int 
 	output->a = 0;
 
 	char tempCatStr[256] = { 0 };
-	snprintf(tempCatStr, sizeof(tempCatStr), "%s\\%d%s", CT2A(CPublic::g_imagePara1[workNum].modelFilePath), CPublic::g_imagePara1[workNum], ".bmp");
+	std::string dateFolder = GetCurrentDateFolder();
+	snprintf(tempCatStr, sizeof(tempCatStr), "%s\\%s\\%d%s", dateFolder.c_str(), CT2A(CPublic::g_imagePara1[workNum].modelFilePath), CPublic::g_imagePara1[workNum], ".bmp");
 	CString imgpath_or(tempCatStr);
 	memset(tempCatStr, sizeof(tempCatStr), 0);
 	snprintf(tempCatStr, sizeof(tempCatStr), "%s\\%d%s", CT2A(CPublic::g_imagePara1[workNum].modelFilePath), "models\\best1.onnx");
 	CString model_path(tempCatStr);
 	memset(tempCatStr, sizeof(tempCatStr), 0);
-	snprintf(tempCatStr, sizeof(tempCatStr), "%s\\%d%s", CT2A(CPublic::g_imagePara1[workNum].modelFilePath), "_om.bmp");
+	snprintf(tempCatStr, sizeof(tempCatStr), "%s\\%s\\%d%s", dateFolder.c_str(), CT2A(CPublic::g_imagePara1[workNum].modelFilePath), "_om.bmp");
 	CString imgpath_om(tempCatStr);
 
 	MbufExport(imgpath_or, M_BMP, MilImage);//保存图像
